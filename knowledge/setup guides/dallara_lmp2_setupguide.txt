@@ -1,0 +1,121 @@
+# KNOWLEDGE BASE: DALLARA P217 LMP2 SETUP ENGINEERING (FULL GUIDE)
+# SOURCE: Apex Racing Academy / iRacing (Parts 1, 2 & 3)
+# SCOPE: Full Car Tuning (Tires, Aero, Chassis, Drivetrain)
+
+---
+
+## 1. PROTOCOLOS GENERALES Y DATOS
+* **Filosofía:** El P217 es un prototipo de alta carga aerodinámica (similar a un F1 carrozado). La gestión de la plataforma aerodinámica (Rake) mediante la suspensión es crítica.
+* **Validación de Datos:**
+    * Ignorar "Last Hot Temps" en garaje. Usar "Tread Remaining" (Desgaste) tras un stint de min. [cite_start]10 vueltas para decisiones de presión/camber [cite: 3513-3522].
+    * **Aero Calculator:** Los cambios en "Ride Height at Speed" son solo simulaciones, no cambian el coche. [cite_start]Usar solo para entender el balance [cite: 3676-3680].
+
+---
+
+## 2. NEUMÁTICOS (TIRES)
+
+### 2.1. Presiones (Pressures)
+* **Objetivo:** Encontrar el rango operativo (actualmente presiones bajas suelen dominar, pero verificar según "Build").
+* **Diagnóstico por Desgaste (Tread Remaining):**
+    * *Desgaste Centro > Bordes:* Sobreinflado (Ballooning). [cite_start]-> **Acción:** Bajar presión [cite: 3532-3535].
+    * *Desgaste Bordes (Ext/Int) > Centro:* Subinflado. [cite_start]-> **Acción:** Subir presión [cite: 3541-3546].
+* **Ajuste Fino (Handling):**
+    * *Bajar Presión:* Más tracción en salida de curva lenta (Hairpins/Bus Stop) y mejor estabilidad en frenada. [cite_start]Riesgo de flaneo en alta velocidad [cite: 3647-3651].
+    * [cite_start]*Subir Presión:* Mayor soporte y reactividad en curva rápida (High Speed), evita que el neumático colapse [cite: 3660-3661].
+
+### 2.2. Caída (Camber)
+* **Regla de Oro:** Buscar desgaste/temperatura igualada entre el **Interior** y el **Centro** del neumático.
+* **Ajuste:**
+    * Si el Interior se desgasta mucho más que el Centro: Exceso de Camber. [cite_start]-> **Acción:** Reducir Camber (hacerlo más positivo) para mejorar ritmo de carrera (Long Run) [cite: 3590-3593].
+    * [cite_start]Si el Exterior se desgasta igual o más que el Centro: Falta de Camber o subinflado severo [cite: 3627-3629].
+
+---
+
+## 3. AERODINÁMICA (AERO)
+
+### 3.1. Configuración de Carga (Packages)
+* **Low Downforce (LDF):** Le Mans, Monza. Prioridad velocidad punta.
+* **Standard / High Downforce (HDF):** Silverstone, Watkins Glen. Prioridad paso por curva.
+* **Elementos Ajustables:**
+    * [cite_start]**Rear Wing:** Bajar ángulo = Menos Drag / Menos Carga Trasera -> Desplaza balance hacia delante (Oversteer) [cite: 3700-3702].
+    * **Dive Planes:**
+        * *1 Plane:* Más eficiente (L/D ratio). Menos carga frontal.
+        * *2 Planes:* Añade carga frontal significativa pero mucho Drag. [cite_start]Usar solo si se necesita rotación extra desesperadamente [cite: 3771-3773].
+    * **Gurney Flaps (Wing & Deck):** Añaden carga trasera eficiente. [cite_start]Generalmente se recomienda llevar el "Deck Gurney" activado para eficiencia [cite: 3761-3762].
+
+### 3.2. Control del Rake (Pitch)
+El ángulo de ataque (Rake) es la herramienta principal de balance.
+* **Aumentar Rake (Subir Trasera / Bajar Delantera):** Desplaza el Centro de Presión (CoP) hacia delante -> **Más Rotación / Oversteer**.
+* [cite_start]**Disminuir Rake (Bajar Trasera / Subir Delantera):** Desplaza CoP hacia atrás -> **Más Estabilidad / Understeer** [cite: 3806-3808].
+* **Ride Heights:** Ajustar usando "Torsion Bar Turns" (Delante) o "Spring Perch Offset" (Detrás).
+
+---
+
+## 4. CHASIS Y SUSPENSIÓN (CHASSIS)
+
+### 4.1. Tercer Muelle (Third Spring / Heave)
+Controla la altura dinámica y el cabeceo (pitch) por carga aerodinámica.
+* **Frontal:**
+    * *Más Blando:* Más agarre mecánico en media curva.
+        * [cite_start]*Riesgo:* El morro baja demasiado en recta/frenada -> Aumenta Rake dinámico -> **Oversteer en alta velocidad** [cite: 3973-3974, 3983-3984].
+    * *Más Duro:* Plataforma aero estable, menos sensibilidad al pitch.
+* **Trasero:**
+    * *Más Blando:* Permite que la trasera baje en recta (reduce drag/rake) y da tracción mecánica. [cite_start]-> **Understeer** [cite: 4148-4150].
+    * [cite_start]*Más Duro:* Mantiene la altura trasera -> Mantiene el Rake -> **Oversteer / Rotación** [cite: 4159-4160].
+* **Validación:** Vigilar la "Third Spring Deflection". [cite_start]Si está en rojo/inválido con el depósito vacío, ajustar el "Third Spring Perch Offset" para mantener la precarga (min 1.1mm) [cite: 3891-3901].
+
+### 4.2. Muelles y Barras de Torsión
+* **Barras de Torsión Delanteras (Front Torsion Bars):**
+    * [cite_start]**UI Quirk:** En este coche, el diámetro **MAYOR** (abajo en la lista) es la barra más **DURA** [cite: 4080-4083].
+    * *Blandas (Arriba/Pequeñas):* Más agarre delantero mecánico -> Mejor giro en media curva.
+* **Muelles Traseros (Rear Springs):**
+    * *Blandos:* Más agarre trasero -> **Understeer**.
+    * [cite_start]*Duros:* Menos agarre trasero -> **Oversteer** (ayuda a rotar la salida) [cite: 4115-4118].
+
+### 4.3. Barras Estabilizadoras (ARBs)
+* **Ajuste:** P1 (Blando/Largo) a P(Alto)/Corto. Se pueden desconectar.
+* **Blanda (Soft):** Más agarre mecánico lateral.
+* **Dura (Stiff):** Respuesta más rápida, menos roll, menos agarre máximo.
+
+### 4.4. Amortiguadores (Dampers)
+* **High Speed (Baches/Pianos):** Ajustar para absorber pianos sin que el coche salga despedido (demasiado duro) ni haga tope (demasiado blando).
+* **Low Speed (Balance en Transición):**
+
+| Fase | Acción Deseada | Ajuste (Low Speed) | Lógica Física |
+| :--- | :--- | :--- | :--- |
+| **Entrada (Braking)** | **Más Rotación** | Bajar Front LS Comp <br> Bajar Rear LS Reb | [cite_start]Permite que el morro baje (Dive) y la trasera suba (Lift) rápido -> **Aumenta Rake Dinámico** [cite: 4237-4240]. |
+| **Entrada (Braking)** | **Más Estabilidad** | Subir Front LS Comp <br> Subir Rear LS Reb | [cite_start]Mantiene el morro arriba y la trasera abajo -> **Rake plano/estable** [cite: 4253-4258]. |
+| **Salida (Accel)** | **Corregir Sobreviraje** | Bajar Front LS Reb <br> Bajar Rear LS Comp | [cite_start]Permite que el morro suba y la trasera baje (Squat) rápido -> **Transfiere peso atrás** [cite: 4273-4275]. |
+| **Salida (Accel)** | **Corregir Subviraje** | Subir Front LS Reb <br> Subir Rear LS Comp | [cite_start]Evita el squat trasero y levantamiento de morro -> **Mantiene carga delantera** [cite: 4290-4295]. |
+
+---
+
+## 5. TREN MOTRIZ Y FRENOS (DRIVETRAIN)
+
+### 5.1. Frenos (Brakes)
+* **Compuestos (Pads):**
+    * *Low Friction:* A menudo preferidos por los "aliens". [cite_start]Aunque frenan menos, generan menos temperatura, evitando el sobrecalentamiento de las gomas delanteras -> Mejor paso por curva [cite: 3238-3241].
+    * *High Friction:* Parada más corta, pero riesgo alto de bloqueo y sobrecalentamiento instantáneo.
+* **Bias:** Ajustar para cada curva si es necesario. [cite_start]Si la trasera se bloquea/desliza en frenada, mover hacia delante (>50%) [cite: 3258-3262].
+
+### 5.2. Control de Tracción (TC)
+* **TC Slip (Deslizamiento):** Cuánto deslizamiento se permite antes de actuar (1 = mucho deslizamiento permitido, 12 = poco).
+* **TC Gain (Ganancia):** Cuán agresivo es el corte de potencia una vez se activa.
+    * *Estrategia:* Buscar el valor de "Slip" más bajo (ej. 1-3) que el piloto pueda controlar, y usar el "Gain" para modular la brusquedad del corte. [cite_start]Si el corte mata demasiado la salida, bajar Gain [cite: 3281-3294].
+
+### 5.3. Mapa de Acelerador (Throttle Map)
+* **Forma "S" (S-Shape):** Recomendada (ej. setting 10). [cite_start]Suaviza la entrega inicial y final, actuando como un "TC natural" en el pie, permitiendo usar menos TC electrónico [cite: 3342-3352].
+
+### 5.4. Diferencial (Diff)
+* **Coast Ramp (Entrada):**
+    * *Bajo (30 deg):* Menos bloqueo -> Más rotación en entrada (Inestable).
+    * [cite_start]*Alto (60 deg):* Más bloqueo -> Más estabilidad / Understeer en entrada[cite: 3405, 3418].
+* **Drive Ramp (Salida):**
+    * *Bajo (30-45 deg):* Más rotación en salida (Power Oversteer).
+    * *Alto (60-80 deg):* Más tracción / Understeer en salida (Locking).
+* **Preload:** Aumentar precarga = Más bloqueo estático = Más Understeer general en transición.
+* **Friction Plates:** Multiplicador de fuerza. [cite_start]Más platos (ej. 8 vs 4) = Diferencial más cerrado/fuerte [cite: 3427-3431].
+
+### 5.5. Relación de Marchas (Gears)
+* **Stacks:** Short, Standard, Tall.
+* [cite_start]**Selección:** Elegir la relación más corta posible que NO llegue al corte de inyección (rev limiter) al final de la recta más larga **estando en rebufo (draft)**[cite: 3450].

@@ -1,0 +1,66 @@
+BMW M4 GT3 - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: BMW P58 3.0L Inline-6 Twin Turbo
+Chassis: Steel chassis with carbon fiber safety cell
+Dimensions:
+- Length: 5020mm (197.6in)
+- Width: 2040mm (80.3in)
+- Wheelbase: 2917mm (114.8in)
+Weight:
+- Dry: 1265kg (2789lbs)
+- Wet with driver: 1400kg (3086lbs)
+Engine:
+- Displacement: 3.0L (183CID)
+- Torque: 479lb-ft (650Nm)
+- RPM Limit: 7200
+- Power: 550bhp (410kW)
+
+=== OPERATION ===
+
+Shifting: Electronic paddle shift. Clutch only for start/stop
+Dash: Bosch DDU 10 display
+Controls: Center console switch panel (Ignition, Start, Lights, Fan)
+
+=== DASHBOARD DISPLAYS ===
+
+Page 1 (Race):
+- RPM LED bar (Green-Red-Blue)
+- Speed, Gear, Fuel Mix, Map, TC, ABS
+- Tire data: Pressure and Temp
+
+Page 2 (Qualifying):
+- Focus on Lap Delta and Predictives
+- Reduced engine monitoring info
+
+Alerts:
+- Low fuel, Overheating, Low Oil Pressure warnings appear on dash
+
+=== CHASSIS & AERO ===
+
+Suspension:
+- Double wishbone (Front/Rear)
+- 5-way adjustable dampers
+
+Aero:
+- Rear Wing: Adjustable angle (0-11 degrees)
+- Ride Height: Affects aero balance. Rake sensitive
+
+=== ELECTRONIC SYSTEMS ===
+
+ABS:
+- 12 positions (1-11 + Off). Lower number = Less intervention
+- Tailor to grip conditions (Dry vs Wet)
+
+Traction Control (TC):
+- TC1: Main cut level
+- TC2: Fine slip control
+- Engine Map: Throttle maps (linear vs butterfly shapes) to suit driver preference
+
+=== DRIVETRAIN ===
+
+Differential:
+- Adjustable Preload (Nm)
+- Ramp Angles (Power/Coast): Affects locking on throttle/brake
+- Clutch: Carbon, 4-plate

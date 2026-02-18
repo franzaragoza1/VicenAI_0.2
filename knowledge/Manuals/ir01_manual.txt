@@ -1,0 +1,173 @@
+DALLARA iR-01 - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: 3.0L V10 naturally aspirated
+Chassis: Carbon fiber aluminum construction
+Dimensions:
+- Length: 4550mm (179.1in)
+- Width: 2180mm (85.8in)
+- Wheelbase: 3050mm (120in)
+Weight:
+- Dry: 600kg (1323lbs)
+- Wet with driver: 716kg (1579lbs)
+Engine:
+- Displacement: 3.0L (183CID)
+- Torque: 246lb-ft (333Nm)
+- Power: 900bhp (671kW)
+- RPM Limit: 20000
+
+=== OPERATION ===
+
+Starting: Turn ignition, press starter, wait for dash to show Race page
+Launch: Press upshift to engage gear, apply throttle
+Shifting: No clutch or throttle blips needed up or down
+Upshift timing: Around 19,200rpm
+
+=== DASHBOARD ===
+
+RACE PAGE:
+
+Left Cluster:
+- RPM: Engine RPM
+- SPEED: Vehicle speed (MPH/KPH)
+- BRAKE BALANCE: % front bias
+- PEDAL: Current throttle map setting
+- FARB: Front ARB blade setting
+- RARB: Rear ARB blade setting
+
+Right Cluster:
+- LAP TIME: Current lap time
+- GAIN/LOSS: Time difference to session best
+- FUEL REMAINING: Fuel level (gallons/liters)
+
+Bottom Row:
+- LAP: Laps completed in outing
+- VOLT: Battery voltage
+- WATER TEMP: Coolant temp (°C/°F)
+- OIL TEMP: Oil temp (°C/°F)
+
+QUAL PAGE:
+
+Same as Race page except bottom row shows:
+- TIRE TEMP: Current surface temp each tire (°C/°F)
+- TIRE PRESS: Current pressure each tire (psi/kPa)
+
+Display Notifications:
+- Top lights left/right: Wheel lock indicators (tire sliding in braking)
+- Flash red: Oil or water temp exceed 100°C
+- Flash red: 3 laps fuel remaining
+- Blue screen + flashing lights: Pit limiter active
+- Bottom line message: Oil/water pressure lost (screen turns red)
+
+=== TIRES ===
+
+Tire Compound:
+- Soft: Most grip, lower lap times, wear quickly
+- Medium: Moderate grip/life balance
+- Hard: Least grip, slower lap times, last much longer
+
+Cold Air Pressure: Set on load. Higher = less drag/heat, less grip. Lower = more drag/heat, more grip. Tire pressures flash on display until 21 psi (tires "settle in", build heat slower for long run)
+
+Hot Air Pressure: Compare cold vs hot for balance. Heavier-loaded tires show larger difference. Adjust cold so similar tires reach similar hot pressures
+
+Tire Temperatures: Carcass temps via Pyrometer. Center temps compare work. Inner/Outer analyze alignment. Three zones across tread
+
+Tread Remaining: Identifies alignment issues (excessive one-sided wear). Use with temps for balance analysis. Three zones across tread
+
+=== CHASSIS - OVERVIEW ===
+
+Simplified suspension: No dedicated corner springs. Heave (pitch) and roll handled independently via Heave Springs and Anti-Roll Bars. Aero tuned via Heave Springs for efficient platform. Roll and mechanical balance tuned via ARBs
+
+=== CHASSIS - FRONT ===
+
+ARB Stiffness: Adjusts roll stiffness via diameter change. Increasing = stiffer, less roll, understeer, more responsive feel. Decreasing = softer, more roll, less understeer, less responsive, more grip
+
+ARB Blades: Alters overall ARB assembly stiffness. Higher values = more force through arms, stiffer, understeer (fine-tuning vs diameter). Lower = less force, softer, less understeer
+
+Pushrod Delta: Changes overall pushrod length, affects front ride height. Increasing = raise front. Decreasing = lower front. Mono-shock design = both pushrods equal, prevents crossweight changes. Alters height without affecting heave spring preload
+
+Nose Weight: % weight on front tires. Rough longitudinal CoG approximation. Influences high-speed stability. Higher = more stable (good low-grip tracks, extra front downforce). Lower = good high-grip tracks, high rear downforce
+
+Spring Perch Offset: Changes static load of front heave spring via adjustable perch. Alters overall front ride height and static deflection/preload in heave spring
+
+Spring Rate: Heave spring. Vertical movement resistance only, no roll effect. Controls increasing aero loads, maintains proper aero attitude. Higher = stiffer vertical, maintain low front height, loss of grip over bumps. Softer = more travel, less aero control, better mechanical grip
+
+Spring Deflection: Heave spring compression from total length under static load. Shows current state
+
+Bump Stiffness: Resistance to compression. Affects vertical (heave) movements only. Fine-tunes aero platform. Increasing = more resistance to compression (reduction in front ride height). Lower = front compresses easier
+
+Rebound Stiffness: Resistance to extension. Heave only. Increasing = controls unwanted vertical oscillations. Too high = suspension can't work over load changes, front grip loss over bumps
+
+=== CHASSIS - CORNERS (ALL FOUR) ===
+
+Corner Weight: Weight on each wheel static in garage. Determines weight distribution
+
+Ride Height: Distance from ground to chassis bottom reference point
+
+Camber: Negative recommended all four wheels. Higher negative = more cornering force, less braking grip. Excessive = high cornering but reduced life. Balance life vs performance
+
+Toe-In: Front: Toe-out = increase slip inside tire, increase stability and turn-in responsiveness. Toe-in = reduce turn-in, reduce temp buildup. Rear: Toe-in = more stability, may hurt direction changes
+
+=== CHASSIS - REAR ===
+
+ARB Stiffness: Adjusts roll stiffness via diameter change. Increasing = stiffer, less roll, oversteer. Decreasing = softer, more roll, less oversteer, less responsive, more grip
+
+ARB Blades: Alters overall ARB assembly stiffness. Higher = more force through arms, stiffer, oversteer (fine-tuning vs diameter). Lower = less force, softer, less oversteer
+
+Pullrod Delta: Changes overall pullrod length, affects rear ride height. Increasing = lower rear. Decreasing = raise rear. Mono-shock design = both pullrods equal, prevents crossweight changes. Alters height without affecting heave spring preload
+
+Spring Perch Offset: Changes static load of rear heave spring via adjustable perch. Alters overall rear ride height and static deflection/preload in heave spring
+
+Spring Rate: Heave spring. Vertical movement resistance only, no roll effect. Controls increasing aero loads, maintains proper aero attitude. Higher = stiffer vertical, consistent rear height, loss of grip over bumps. Softer = more travel, less aero control, better mechanical grip
+
+Spring Deflection: Heave spring compression from total length under static load
+
+Bump Stiffness: Resistance to compression. Affects vertical (heave) movements only. Fine-tunes aero platform. Increasing = more resistance. Lower = rear compresses easier
+
+Rebound Stiffness: Resistance to extension. Heave only. Increasing = controls unwanted vertical oscillations. Too high = suspension can't work over load changes, rear grip loss over bumps
+
+=== VEHICLE SYSTEMS - AERO ===
+
+Front Wing Angle: Angle of Attack of front wing elements. Increasing = more downforce, more drag. Decreasing = less downforce, less drag. Heavy influence on front downforce, large effect front-end grip mid-high speed corners
+
+=== VEHICLE SYSTEMS - GEARBOX ===
+
+Final Drive: Alters top speed and acceleration. Lower values = higher top speed, slower acceleration. Higher = reduced top speed, better acceleration
+
+=== VEHICLE SYSTEMS - DIFFERENTIAL ===
+
+Coast Ramp Angle: Affects differential under deceleration. Higher numbers = less locking force. Lower = more locking force. More locking = more understeer deceleration
+
+Drive Ramp Angle: Affects differential under acceleration. Higher numbers = less locking force. Lower = more locking force. More locking = more understeer but helps traction
+
+Clutch Plates: Number of clutch faces affects overall locking force. Multiplier effect - more faces = increasingly more locking force
+
+Preload: Static preload applied to friction surfaces. Higher = more locking in all conditions, understeer acceleration/deceleration, mid-corner understeer (less unlock)
+
+=== VEHICLE SYSTEMS - ENGINE IN-CAR ===
+
+Throttle Shaping (PEDAL in-car):
+- Setting 1: S-shaped torque map (lower torque at low inputs, rapidly increasing)
+- Setting 2: More linear than 1, more S-curved than 3
+- Setting 3: Linear torque map (equal torque increase per throttle %)
+
+=== VEHICLE SYSTEMS - FUEL ===
+
+Fuel Level: Amount in tank when leaving garage
+
+=== VEHICLE SYSTEMS - BRAKE SYSTEM ===
+
+Front Master Cylinder: Larger = less front pressure, rearward bias, "softer" feel. Smaller = more front pressure, forward bias, more aggressive feel
+
+Rear Master Cylinder: Larger = less rear pressure, forward bias, "softer" feel. Smaller = more rear pressure, rearward bias, more aggressive feel
+
+Brake Pressure Bias: % to front brakes. Above 50% = more front. Below 50% = more rear. Tune for preference and conditions
+
+=== VEHICLE SYSTEMS - STEERING ===
+
+Steering Pinion Ratio: Value represents steering rack movement per pinion revolution. Larger values = faster steering feel
+
+=== VEHICLE SYSTEMS - DASH CONFIG ===
+
+Display Page: Sets default page on steering wheel at load (no performance effect)

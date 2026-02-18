@@ -1,0 +1,128 @@
+# KNOWLEDGE BASE: CORVETTE C8.R GTE SETUP ENGINEERING (FULL GUIDE)
+# SOURCE: Apex Racing Academy / iRacing (Parts 1, 2 & 3)
+# SCOPE: Full Car Tuning (Tires, Aero, Chassis, Drivetrain, Electronics)
+
+---
+
+## 1. PROTOCOLOS GENERALES Y DATOS
+* **Filosofía:** El Corvette GTE es sensible al "Rake" (ángulo de ataque) y funciona mejor manteniendo la plataforma aerodinámica estable.
+* **Validación de Datos:**
+    * **Ignorar:** "Last Hot Temps" (Temperaturas al entrar a box). [cite_start]Son datos transitorios y poco fiables [cite: 5123-5125].
+    * **Utilizar:** "Tread Remaining" (Desgaste restante) tras un stint de mínimo 10 vueltas. [cite_start]Es el único dato promedio real [cite: 5125-5129].
+
+---
+
+## 2. NEUMÁTICOS (TIRES)
+
+### 2.1. Presiones (Pressures)
+* **Objetivo:** Encontrar el rango operativo óptimo (actualmente se tiende a presiones mínimas/bajas).
+* **Diagnóstico por Desgaste:**
+    * *Desgaste Centro > Bordes:* Sobreinflado. El neumático se abomba (ballooning). [cite_start]-> **Acción:** Bajar presión [cite: 5148-5151].
+    * *Desgaste Bordes > Centro:* Subinflado. El neumático colapsa en el centro. [cite_start]-> **Acción:** Subir presión [cite: 5153-5155].
+* **Ajuste de Comportamiento (Handling):**
+    * *Bajar Presión:* Aumenta tracción en salida de curva lenta (Bus Stop/La Source) y agarre en frenada. [cite_start]Riesgo de inestabilidad en curva rápida [cite: 5232-5236].
+    * *Subir Presión:* Aumenta soporte y reactividad en curva rápida (Eau Rouge/Pouhon). [cite_start]Evita que el flanco se doble [cite: 5248-5249].
+
+### 2.2. Caída (Camber)
+* **Regla de Oro:** El desgaste del **Interior** debe igualar al del **Centro** del neumático.
+* **Diagnóstico:**
+    * *Interior muy desgastado vs Centro:* Exceso de Camber negativo. [cite_start]-> **Acción:** Reducir Camber (hacerlo más positivo) para mejorar ritmo de carrera (Long Run) [cite: 5212-5215].
+    * [cite_start]*Centro/Exterior desgastado vs Interior:* Falta de Camber (poco común en GTE, suele ser presión) [cite: 5223-5224].
+
+---
+
+## 3. AERODINÁMICA (AERO)
+
+### 3.1. Conceptos Clave
+* **Aero Calculator:** Herramienta para estimar el balance (% Front Downforce). [cite_start]Los cambios en "Ride Height at Speed" no afectan al coche real, solo al cálculo [cite: 5263-5266].
+* **Rake (Ángulo de Ataque):** La diferencia de altura entre la trasera y la delantera.
+    * [cite_start]*Subir Trasera / Bajar Delantera:* Aumenta Rake -> Aumenta % Frontal -> **Más Rotación (Oversteer)** [cite: 5274-5278].
+    * *Bajar Trasera / Subir Delantera:* Disminuye Rake -> Disminuye % Frontal -> **Más Estabilidad (Understeer)**.
+
+### 3.2. Procedimiento de Ajuste de Balance
+Si se cambia el Alerón Trasero (Wing), se rompe el balance. Para mantener el comportamiento del coche (Understeer/Oversteer) pero cambiando el nivel de Carga/Drag:
+1.  Anotar el "% Front Downforce" actual (ej. 40.7%).
+2.  Cambiar el Alerón (ej. bajar ala para Monza).
+3.  Ajustar la **Altura Trasera** (Spring Perch Offset) hasta que el "% Front Downforce" vuelva al valor original.
+    * [cite_start]*Resultado:* Coche con menos drag pero mismo balance de manejo [cite: 5319-5321].
+
+---
+
+## 4. CHASIS Y SUSPENSIÓN (CHASSIS)
+
+### 4.1. Barras Estabilizadoras (ARBs)
+* **Configuración:**
+    * *Disconnected:* La opción más blanda posible. [cite_start]Máximo agarre mecánico y rotación en mitad de curva [cite: 4651-4652].
+    * *Standard:* Conectada.
+        * **Valor 9:** Blando (Soft).
+        * [cite_start]**Valor 0:** Duro (Stiff) [cite: 4661-4666]. *Nota: Inverso a lo habitual.*
+* **Ajuste:**
+    * *Más Blanda (Hacia 9 o Disconnect):* Más agarre en mitad de curva (reduce subviraje).
+    * *Más Dura (Hacia 0):* Más respuesta, menos roll, menos agarre máximo (induce subviraje).
+
+### 4.2. Muelles (Springs)
+* **Delanteros:**
+    * *Más Blandos:* Más agarre/rotación en mitad de curva.
+    * [cite_start]*Más Duros:* Más reactividad, induce subviraje [cite: 4723-4726].
+* **Traseros:**
+    * *Más Blandos:* Más agarre trasero (tracción) -> Induce Subviraje.
+    * [cite_start]*Más Duros:* Menos agarre trasero -> Induce Sobreviraje (ayuda a rotar) [cite: 4768-4771].
+
+### 4.3. Amortiguadores (Dampers)
+* **High Speed:** Controlan baches y pianos (Kerbs).
+    * *Objetivo:* Que el coche no salga despedido (demasiado duro) ni haga tope/bottoming (demasiado blando). [cite_start]Usar histogramas para ajustar [cite: 4836-4838].
+* **Low Speed (Balance en Transición):**
+    * **Entrada (Entry) - Para MÁS Rotación:**
+        * *Front LS Compression:* BAJAR (Más blando) -> Permite que el morro baje (Dive).
+        * *Rear LS Rebound:* BAJAR (Más blando) -> Permite que la trasera suba (Lift).
+        * [cite_start]*Efecto:* Aumenta Rake dinámico instantáneamente [cite: 4895-4899].
+    * **Salida (Exit) - Para CORREGIR Sobreviraje:**
+        * *Front LS Rebound:* BAJAR (Más blando) -> Permite que el morro suba (Lift).
+        * *Rear LS Compression:* BAJAR (Más blando) -> Permite que la trasera baje (Squat).
+        * [cite_start]*Efecto:* Transfiere peso atrás para ganar tracción [cite: 4919-4920].
+
+### 4.4. Otros Ajustes de Chasis
+* **Toe-In (Convergencia):** Mantener cerca de 0 (+/- 2). [cite_start]Valores extremos generan calor excesivo [cite: 4673-4676].
+* **Brake Pads (Pastillas):**
+    * [cite_start]*Low Friction:* Frenada más larga pero menos calor en el neumático = Más grip en curva[cite: 4714].
+    * *High Friction:* Parada corta pero riesgo de bloqueo y sobrecalentamiento.
+* **Packers:** Topes de suspensión. [cite_start]Usar en circuitos bacheados (Sebring) para evitar que la suspensión haga tope metálico [cite: 4747-4748].
+
+---
+
+## 5. ELECTRÓNICA Y SISTEMAS (IN-CAR)
+
+### 5.1. Control de Tracción (TC)
+* **TC1 (Slip/Lateral):** Controla el deslizamiento lateral (cuando el coche "se va" o rota de más en curva).
+    * [cite_start]*Ajuste:* Subir si el coche derrapa/pierde la trasera en curvas medias/rápidas (ej. Pouhon) [cite: 4624-4626].
+* **TC2 (Longitudinal/Acceleration):** Controla la tracción en línea recta y salida de curva lenta.
+    * [cite_start]*Ajuste:* Subir si hay wheelspin al acelerar desde parado o en horquillas (ej. Bus Stop) [cite: 4620-4622].
+* **Valores:** 1 (Mínimo soporte) a 11 (Máximo). 12 es Apagado.
+
+### 5.2. Mapa Motor y Brake Bias
+* **Engine Map:** Usar Mapa 1 para máxima potencia. [cite_start]Mapas altos (11-12) para Safety Car o ahorro extremo [cite: 4630-4632].
+* **Brake Bias:**
+    * *Más Alto (%):* Más freno delante -> Más estable, subvirador.
+    * [cite_start]*Más Bajo (%):* Más freno detrás -> Ayuda a rotar en frenada, riesgo de bloqueo trasero [cite: 4600-4602].
+
+---
+
+## 6. TREN MOTRIZ (DRIVETRAIN)
+
+### 6.1. Relación de Marchas (Gear Ratios)
+* **1ª/2ª Marcha:** Ajustar para la curva más lenta. [cite_start]Buscar una relación que permita aceleración agresiva con un mínimo control de tracción natural (evitar wheelspin excesivo) [cite: 4988-4990].
+* [cite_start]**Marcha Final (Top Gear):** Ajustar para llegar casi al corte de inyección al final de la recta más larga **estando en rebufo (draft)** [cite: 5010-5012].
+* **Marchas Intermedias:** Espaciar uniformemente para evitar caídas de RPM (bogging down).
+
+### 6.2. Diferencial (Diff)
+* **Lógica General:** Aumentar bloqueo (Locking) genera **Subviraje** (Estabilidad). [cite_start]Reducir bloqueo genera **Sobreviraje** (Rotación) [cite: 5043-5044].
+* **Coast Ramp (Entrada/Frenada):**
+    * *Subir Valor (Más Bloqueo):* Estabiliza la entrada si la trasera es muy nerviosa.
+    * [cite_start]*Bajar Valor (Menos Bloqueo):* Permite más rotación en la entrada si el coche no quiere girar [cite: 5053-5057].
+* **Drive Ramp (Salida/Aceleración):**
+    * *Subir Valor (Más Bloqueo):* Aumenta tracción pero induce subviraje en salida (Push).
+    * [cite_start]*Bajar Valor (Menos Bloqueo):* Permite más rotación en salida (Power Oversteer) [cite: 5066-5067].
+* **Preload & Friction Plates:**
+    * *Plates (Caras):* Multiplicador macro. Menos caras = Menos bloqueo.
+    * *Preload:* Ajuste fino.
+    * [cite_start]*Uso:* Si el coche es inconducible en entrada y salida, aumentar Platos/Preload para bloquear y estabilizar todo el comportamiento[cite: 5048].

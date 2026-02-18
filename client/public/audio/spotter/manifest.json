@@ -1,0 +1,780 @@
+{
+  "generated": "2026-01-21T17:41:24.667Z",
+  "service": "ElevenLabs",
+  "voiceId": "p7AwDmKvTdoHTBuueGvP",
+  "model": "eleven_multilingual_v2",
+  "audioFormat": "mp3",
+  "language": "es-AR",
+  "files": [
+    {
+      "filename": "car_left_v1.mp3",
+      "text": "¡Auto a la izquierda!",
+      "size": 20524
+    },
+    {
+      "filename": "car_left_v2.mp3",
+      "text": "Izquierda, izquierda",
+      "size": 19688
+    },
+    {
+      "filename": "car_left_v3.mp3",
+      "text": "Tenés uno a la izquierda",
+      "size": 22613
+    },
+    {
+      "filename": "car_left_v4.mp3",
+      "text": "Ojo izquierda",
+      "size": 18016
+    },
+    {
+      "filename": "car_right_v1.mp3",
+      "text": "¡Auto a la derecha!",
+      "size": 20942
+    },
+    {
+      "filename": "car_right_v2.mp3",
+      "text": "Derecha, derecha",
+      "size": 20524
+    },
+    {
+      "filename": "car_right_v3.mp3",
+      "text": "Tenés uno a la derecha",
+      "size": 23449
+    },
+    {
+      "filename": "car_right_v4.mp3",
+      "text": "Ojo derecha",
+      "size": 18016
+    },
+    {
+      "filename": "three_wide_v1.mp3",
+      "text": "¡Tres de frente!",
+      "size": 17598
+    },
+    {
+      "filename": "three_wide_v2.mp3",
+      "text": "Uno a cada costado",
+      "size": 22613
+    },
+    {
+      "filename": "three_wide_v3.mp3",
+      "text": "Estás en el medio de dos",
+      "size": 24703
+    },
+    {
+      "filename": "three_wide_v4.mp3",
+      "text": "Sandwich, cuidado",
+      "size": 20942
+    },
+    {
+      "filename": "clear_v1.mp3",
+      "text": "Libre, dale",
+      "size": 17598
+    },
+    {
+      "filename": "clear_v2.mp3",
+      "text": "Despejado",
+      "size": 16762
+    },
+    {
+      "filename": "clear_v3.mp3",
+      "text": "Andá tranquilo",
+      "size": 18016
+    },
+    {
+      "filename": "clear_v4.mp3",
+      "text": "Todo limpio",
+      "size": 16762
+    },
+    {
+      "filename": "clear_all_around_v1.mp3",
+      "text": "Libre por todos lados",
+      "size": 22613
+    },
+    {
+      "filename": "clear_all_around_v2.mp3",
+      "text": "No hay nadie cerca",
+      "size": 20942
+    },
+    {
+      "filename": "clear_all_around_v3.mp3",
+      "text": "Despejado completamente",
+      "size": 24285
+    },
+    {
+      "filename": "clear_left_v1.mp3",
+      "text": "Libre a la izquierda",
+      "size": 20942
+    },
+    {
+      "filename": "clear_left_v2.mp3",
+      "text": "Podés cerrar a la izquierda",
+      "size": 25539
+    },
+    {
+      "filename": "clear_left_v3.mp3",
+      "text": "Izquierda despejada",
+      "size": 22613
+    },
+    {
+      "filename": "clear_right_v1.mp3",
+      "text": "Libre a la derecha",
+      "size": 20942
+    },
+    {
+      "filename": "clear_right_v2.mp3",
+      "text": "Podés cerrar a la derecha",
+      "size": 25539
+    },
+    {
+      "filename": "clear_right_v3.mp3",
+      "text": "Derecha despejada",
+      "size": 21777
+    },
+    {
+      "filename": "still_left_1_v1.mp3",
+      "text": "Sigue a la izquierda, che",
+      "size": 22613
+    },
+    {
+      "filename": "still_left_2_v1.mp3",
+      "text": "Todavía está en la izquierda",
+      "size": 24285
+    },
+    {
+      "filename": "still_left_3_v1.mp3",
+      "text": "Continúa a tu izquierda",
+      "size": 23449
+    },
+    {
+      "filename": "still_right_1_v1.mp3",
+      "text": "Sigue a la derecha, che",
+      "size": 22613
+    },
+    {
+      "filename": "still_right_2_v1.mp3",
+      "text": "Todavía está en la derecha",
+      "size": 24703
+    },
+    {
+      "filename": "still_right_3_v1.mp3",
+      "text": "Continúa a tu derecha",
+      "size": 21777
+    },
+    {
+      "filename": "still_three_wide_1_v1.mp3",
+      "text": "Siguen los tres de frente",
+      "size": 23449
+    },
+    {
+      "filename": "still_three_wide_2_v1.mp3",
+      "text": "Todavía uno a cada lado",
+      "size": 24285
+    },
+    {
+      "filename": "still_three_wide_3_v1.mp3",
+      "text": "Se mantienen al costado",
+      "size": 24285
+    },
+    {
+      "filename": "yellow_flag_v1.mp3",
+      "text": "¡Bandera amarilla!",
+      "size": 19688
+    },
+    {
+      "filename": "yellow_flag_v2.mp3",
+      "text": "Amarilla, tranquilo",
+      "size": 21777
+    },
+    {
+      "filename": "yellow_flag_v3.mp3",
+      "text": "Ojo, amarilla en pista",
+      "size": 24285
+    },
+    {
+      "filename": "yellow_flag_v4.mp3",
+      "text": "Precaución, amarilla",
+      "size": 24285
+    },
+    {
+      "filename": "yellow_flag_v5.mp3",
+      "text": "Cuidado, bandera amarilla",
+      "size": 24703
+    },
+    {
+      "filename": "blue_flag_v1.mp3",
+      "text": "Bandera azul, dejá pasar",
+      "size": 22613
+    },
+    {
+      "filename": "blue_flag_v2.mp3",
+      "text": "Azul, dale paso",
+      "size": 21777
+    },
+    {
+      "filename": "blue_flag_v3.mp3",
+      "text": "Ojo, azul, te están alcanzando",
+      "size": 31391
+    },
+    {
+      "filename": "blue_flag_v4.mp3",
+      "text": "Dejá pasar, bandera azul",
+      "size": 20524
+    },
+    {
+      "filename": "blue_flag_v5.mp3",
+      "text": "Azul, movete",
+      "size": 18852
+    },
+    {
+      "filename": "green_flag_v1.mp3",
+      "text": "Verde, dale que volvió",
+      "size": 21777
+    },
+    {
+      "filename": "green_flag_v2.mp3",
+      "text": "Bandera verde, a fondo",
+      "size": 21777
+    },
+    {
+      "filename": "green_flag_v3.mp3",
+      "text": "Verde, volvió la carrera",
+      "size": 24703
+    },
+    {
+      "filename": "white_flag_v1.mp3",
+      "text": "Última vuelta",
+      "size": 18016
+    },
+    {
+      "filename": "white_flag_v2.mp3",
+      "text": "Bandera blanca, es la última",
+      "size": 26375
+    },
+    {
+      "filename": "white_flag_v3.mp3",
+      "text": "Última pasada, dale",
+      "size": 22613
+    },
+    {
+      "filename": "checkered_flag_v1.mp3",
+      "text": "A cuadros, terminamos",
+      "size": 23449
+    },
+    {
+      "filename": "checkered_flag_v2.mp3",
+      "text": "Bandera a cuadros, bien ahí",
+      "size": 24285
+    },
+    {
+      "filename": "checkered_flag_v3.mp3",
+      "text": "Cuadros, la terminaste",
+      "size": 23449
+    },
+    {
+      "filename": "black_flag_v1.mp3",
+      "text": "¡Bandera negra, penalización!",
+      "size": 27629
+    },
+    {
+      "filename": "black_flag_v2.mp3",
+      "text": "Negra, cagamos fuego",
+      "size": 23449
+    },
+    {
+      "filename": "black_flag_v3.mp3",
+      "text": "Ojo, bandera negra",
+      "size": 23449
+    },
+    {
+      "filename": "black_flag_v4.mp3",
+      "text": "Penalización, bandera negra",
+      "size": 27211
+    },
+    {
+      "filename": "black_flag_jump_start_v1.mp3",
+      "text": "Salida en falso, negra",
+      "size": 23449
+    },
+    {
+      "filename": "black_flag_jump_start_v2.mp3",
+      "text": "Te adelantaste en la largada",
+      "size": 27629
+    },
+    {
+      "filename": "black_flag_jump_start_v3.mp3",
+      "text": "Jump start, bandera negra",
+      "size": 23449
+    },
+    {
+      "filename": "black_flag_jump_start_v4.mp3",
+      "text": "Arrancaste antes, penalización",
+      "size": 32226
+    },
+    {
+      "filename": "pbox_v1.mp3",
+      "text": "Box en esta vuelta",
+      "size": 20524
+    },
+    {
+      "filename": "pbox_v2.mp3",
+      "text": "Entrá a boxes ahora",
+      "size": 22613
+    },
+    {
+      "filename": "pbox_v3.mp3",
+      "text": "P-box, esta vuelta",
+      "size": 22613
+    },
+    {
+      "filename": "pbox_v4.mp3",
+      "text": "Confirmado, entrá a boxes",
+      "size": 25539
+    },
+    {
+      "filename": "pbox_this_lap_v1.mp3",
+      "text": "Box esta vuelta",
+      "size": 19688
+    },
+    {
+      "filename": "pbox_this_lap_v2.mp3",
+      "text": "Entrá ahora a boxes",
+      "size": 23449
+    },
+    {
+      "filename": "pbox_this_lap_v3.mp3",
+      "text": "Esta pasada, boxes",
+      "size": 24285
+    },
+    {
+      "filename": "pbox_next_lap_v1.mp3",
+      "text": "Box próxima vuelta",
+      "size": 21777
+    },
+    {
+      "filename": "pbox_next_lap_v2.mp3",
+      "text": "Preparate, boxes la que viene",
+      "size": 26375
+    },
+    {
+      "filename": "pbox_next_lap_v3.mp3",
+      "text": "Siguiente pasada, boxes",
+      "size": 26375
+    },
+    {
+      "filename": "stay_out_v1.mp3",
+      "text": "Quedate afuera, no entres",
+      "size": 24285
+    },
+    {
+      "filename": "stay_out_v2.mp3",
+      "text": "Mantenete en pista",
+      "size": 22613
+    },
+    {
+      "filename": "stay_out_v3.mp3",
+      "text": "No boxes, seguí",
+      "size": 19688
+    },
+    {
+      "filename": "stay_out_v4.mp3",
+      "text": "Continuá, no pares",
+      "size": 20942
+    },
+    {
+      "filename": "pit_entry_v1.mp3",
+      "text": "Entrada a boxes, tranqui",
+      "size": 23449
+    },
+    {
+      "filename": "pit_entry_v2.mp3",
+      "text": "Pit lane, despacio",
+      "size": 20942
+    },
+    {
+      "filename": "pit_entry_v3.mp3",
+      "text": "Entrando a boxes",
+      "size": 20942
+    },
+    {
+      "filename": "pit_exit_v1.mp3",
+      "text": "Salida de boxes, ojo con el tráfico",
+      "size": 35988
+    },
+    {
+      "filename": "pit_exit_v2.mp3",
+      "text": "Pit exit, cuidado",
+      "size": 20942
+    },
+    {
+      "filename": "pit_exit_v3.mp3",
+      "text": "Salís de boxes, fijate",
+      "size": 24285
+    },
+    {
+      "filename": "push_v1.mp3",
+      "text": "Dale que es ahora",
+      "size": 19688
+    },
+    {
+      "filename": "push_v2.mp3",
+      "text": "Empujá, che",
+      "size": 18016
+    },
+    {
+      "filename": "push_v3.mp3",
+      "text": "A fondo ahora",
+      "size": 17598
+    },
+    {
+      "filename": "push_v4.mp3",
+      "text": "Apretá, dale",
+      "size": 17598
+    },
+    {
+      "filename": "push_hard_v1.mp3",
+      "text": "A fondo",
+      "size": 15090
+    },
+    {
+      "filename": "push_hard_v2.mp3",
+      "text": "Dale con todo",
+      "size": 18852
+    },
+    {
+      "filename": "push_hard_v3.mp3",
+      "text": "Empujá fuerte",
+      "size": 18852
+    },
+    {
+      "filename": "push_hard_v4.mp3",
+      "text": "Metele ahora",
+      "size": 17598
+    },
+    {
+      "filename": "save_fuel_v1.mp3",
+      "text": "Ahorrá combustible, che",
+      "size": 21777
+    },
+    {
+      "filename": "save_fuel_v2.mp3",
+      "text": "Cuidá la nafta",
+      "size": 19688
+    },
+    {
+      "filename": "save_fuel_v3.mp3",
+      "text": "Tranqui con el fuel",
+      "size": 20942
+    },
+    {
+      "filename": "manage_tires_v1.mp3",
+      "text": "Cuidá las cubiertas",
+      "size": 23449
+    },
+    {
+      "filename": "manage_tires_v2.mp3",
+      "text": "Ahorrá gomas, che",
+      "size": 19688
+    },
+    {
+      "filename": "manage_tires_v3.mp3",
+      "text": "Tranquilo con los neumáticos",
+      "size": 25539
+    },
+    {
+      "filename": "fast_lap_v1.mp3",
+      "text": "Vuelta rápida, dale",
+      "size": 22613
+    },
+    {
+      "filename": "fast_lap_v2.mp3",
+      "text": "A fondo esta vuelta",
+      "size": 20942
+    },
+    {
+      "filename": "fast_lap_v3.mp3",
+      "text": "Dale que es ahora",
+      "size": 18852
+    },
+    {
+      "filename": "fast_lap_v4.mp3",
+      "text": "Metele, vuelta rápida",
+      "size": 22613
+    },
+    {
+      "filename": "damage_v1.mp3",
+      "text": "Daños detectados",
+      "size": 21777
+    },
+    {
+      "filename": "damage_v2.mp3",
+      "text": "Tenés daños, ojo",
+      "size": 21777
+    },
+    {
+      "filename": "damage_v3.mp3",
+      "text": "Cuidado, hay daños",
+      "size": 23449
+    },
+    {
+      "filename": "low_fuel_v1.mp3",
+      "text": "Combustible bajo",
+      "size": 19688
+    },
+    {
+      "filename": "low_fuel_v2.mp3",
+      "text": "Ojo con la nafta",
+      "size": 20942
+    },
+    {
+      "filename": "low_fuel_v3.mp3",
+      "text": "Te estás quedando sin fuel",
+      "size": 23449
+    },
+    {
+      "filename": "last_lap_fuel_v1.mp3",
+      "text": "Combustible justo para la última, tranqui",
+      "size": 34316
+    },
+    {
+      "filename": "last_lap_fuel_v2.mp3",
+      "text": "Alcanza para una más",
+      "size": 22613
+    },
+    {
+      "filename": "last_lap_fuel_v3.mp3",
+      "text": "Fuel para última vuelta",
+      "size": 23449
+    },
+    {
+      "filename": "fuel_critical_v1.mp3",
+      "text": "¡Combustible crítico!",
+      "size": 20942
+    },
+    {
+      "filename": "fuel_critical_v2.mp3",
+      "text": "Te quedás sin nafta",
+      "size": 21777
+    },
+    {
+      "filename": "fuel_critical_v3.mp3",
+      "text": "Ojo, sin fuel",
+      "size": 20524
+    },
+    {
+      "filename": "rain_incoming_v1.mp3",
+      "text": "Se viene la lluvia",
+      "size": 21777
+    },
+    {
+      "filename": "rain_incoming_v2.mp3",
+      "text": "Ojo que viene agua",
+      "size": 21777
+    },
+    {
+      "filename": "rain_incoming_v3.mp3",
+      "text": "Lluvia aproximándose",
+      "size": 22613
+    },
+    {
+      "filename": "track_drying_v1.mp3",
+      "text": "Pista secándose, dale",
+      "size": 23449
+    },
+    {
+      "filename": "track_drying_v2.mp3",
+      "text": "Se está secando la pista",
+      "size": 24285
+    },
+    {
+      "filename": "track_drying_v3.mp3",
+      "text": "Mejorando las condiciones",
+      "size": 23449
+    },
+    {
+      "filename": "leader_v1.mp3",
+      "text": "Sos el líder",
+      "size": 17598
+    },
+    {
+      "filename": "leader_v2.mp3",
+      "text": "Primero, dale",
+      "size": 18016
+    },
+    {
+      "filename": "leader_v3.mp3",
+      "text": "Puntero",
+      "size": 14254
+    },
+    {
+      "filename": "p2_v1.mp3",
+      "text": "Segundo lugar",
+      "size": 16762
+    },
+    {
+      "filename": "p2_v2.mp3",
+      "text": "Posición dos",
+      "size": 18852
+    },
+    {
+      "filename": "p2_v3.mp3",
+      "text": "P-dos",
+      "size": 13836
+    },
+    {
+      "filename": "p3_v1.mp3",
+      "text": "Tercer lugar",
+      "size": 16762
+    },
+    {
+      "filename": "p3_v2.mp3",
+      "text": "Posición tres",
+      "size": 18016
+    },
+    {
+      "filename": "p3_v3.mp3",
+      "text": "P-tres",
+      "size": 14254
+    },
+    {
+      "filename": "last_place_v1.mp3",
+      "text": "Última posición, che",
+      "size": 22613
+    },
+    {
+      "filename": "last_place_v2.mp3",
+      "text": "Estás último",
+      "size": 18852
+    },
+    {
+      "filename": "last_place_v3.mp3",
+      "text": "Colero",
+      "size": 15090
+    },
+    {
+      "filename": "faster_than_leader_v1.mp3",
+      "text": "Vas más rápido que el puntero",
+      "size": 26375
+    },
+    {
+      "filename": "faster_than_leader_v2.mp3",
+      "text": "Mejor tiempo que el líder",
+      "size": 23449
+    },
+    {
+      "filename": "faster_than_leader_v3.mp3",
+      "text": "Le estás ganando al primero",
+      "size": 24703
+    },
+    {
+      "filename": "losing_time_v1.mp3",
+      "text": "Estás perdiendo tiempo",
+      "size": 24285
+    },
+    {
+      "filename": "losing_time_v2.mp3",
+      "text": "Vas lento",
+      "size": 15090
+    },
+    {
+      "filename": "losing_time_v3.mp3",
+      "text": "Te están alcanzando",
+      "size": 22613
+    },
+    {
+      "filename": "good_pace_v1.mp3",
+      "text": "Buen ritmo",
+      "size": 14254
+    },
+    {
+      "filename": "good_pace_v2.mp3",
+      "text": "Vas bien, che",
+      "size": 18016
+    },
+    {
+      "filename": "good_pace_v3.mp3",
+      "text": "Buen pace",
+      "size": 15926
+    },
+    {
+      "filename": "nice_work_v1.mp3",
+      "text": "Bien ahí, loco",
+      "size": 20524
+    },
+    {
+      "filename": "nice_work_v2.mp3",
+      "text": "Buen laburo, che",
+      "size": 19688
+    },
+    {
+      "filename": "nice_work_v3.mp3",
+      "text": "La rompiste",
+      "size": 16762
+    },
+    {
+      "filename": "nice_work_v4.mp3",
+      "text": "Excelente",
+      "size": 17598
+    },
+    {
+      "filename": "keep_it_up_v1.mp3",
+      "text": "Seguí así, dale",
+      "size": 20524
+    },
+    {
+      "filename": "keep_it_up_v2.mp3",
+      "text": "Mantené el ritmo",
+      "size": 20524
+    },
+    {
+      "filename": "keep_it_up_v3.mp3",
+      "text": "Así está bien",
+      "size": 17598
+    },
+    {
+      "filename": "keep_it_up_v4.mp3",
+      "text": "Dale que va",
+      "size": 16762
+    },
+    {
+      "filename": "focus_v1.mp3",
+      "text": "Concentrate, che",
+      "size": 20942
+    },
+    {
+      "filename": "focus_v2.mp3",
+      "text": "Ojo, enfocate",
+      "size": 18852
+    },
+    {
+      "filename": "focus_v3.mp3",
+      "text": "Atento ahora",
+      "size": 18852
+    },
+    {
+      "filename": "focus_v4.mp3",
+      "text": "Dale, concentrate",
+      "size": 20524
+    },
+    {
+      "filename": "copy_v1.mp3",
+      "text": "Copiado, che",
+      "size": 18016
+    },
+    {
+      "filename": "copy_v2.mp3",
+      "text": "Recibido",
+      "size": 15926
+    },
+    {
+      "filename": "copy_v3.mp3",
+      "text": "Dale, ok",
+      "size": 15926
+    },
+    {
+      "filename": "copy_v4.mp3",
+      "text": "Entendido",
+      "size": 17598
+    }
+  ]
+}

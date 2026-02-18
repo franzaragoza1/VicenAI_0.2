@@ -1,0 +1,127 @@
+# KNOWLEDGE BASE: DALLARA F3 SETUP ENGINEERING (FULL GUIDE)
+# SOURCE: Apex Racing Academy / iRacing (Parts 1, 2 & 3)
+# SCOPE: Full Car Tuning (Tires, Aero, Chassis, Drivetrain)
+
+---
+
+## 1. PROTOCOLOS GENERALES Y DATOS
+* **Filosofía:** El Dallara F3 es un coche de alta carga aerodinámica. Los cambios mecánicos afectan a la plataforma aerodinámica (Rake), por lo que todo está interconectado.
+* **Validación de Datos:**
+    * [cite_start]Ignorar "Last Hot Temps" en el garaje para decisiones críticas; usar herramientas de telemetría (VRS/MoTeC) o medias de desgaste [cite: 1183-1185].
+    * [cite_start]Realizar cambios de uno en uno para aislar efectos [cite: 824-825].
+
+---
+
+## 2. NEUMÁTICOS (TIRES)
+
+### 2.1. Presiones (Pressures)
+* [cite_start]**Búsqueda del Rango:** Iniciar con los rangos del "Data Pack" y ajustar en incrementos pequeños (ej. 5 kPa)[cite: 1167, 1224].
+* **Comportamiento Dinámico:**
+    * **Baja Presión:** Mayor agarre mecánico en curva lenta y tracción. [cite_start]Riesgo: Inestabilidad/flaneo en curva rápida y sobrecalentamiento [cite: 1178-1181].
+    * **Alta Presión:** Mayor soporte estructural en curva rápida (evita que el neumático colapse). [cite_start]Menor agarre en lenta [cite: 1206-1207].
+* **Diagnóstico por Desgaste/Temperatura:**
+    * [cite_start]*Centro > Bordes:* Sobreinflado (bajar presión) [cite: 1234-1236].
+    * [cite_start]*Bordes (Int/Ext) > Centro:* Subinflado (subir presión) [cite: 1248-1249].
+
+### 2.2. Caída (Camber)
+* **Objetivo:** Maximizar el parche de contacto en apoyo lateral.
+* [cite_start]**Punto Óptimo:** La temperatura y desgaste del **Interior** debe ser igual a la del **Centro**[cite: 1261].
+* **Síntoma de Exceso:** El interior se desgasta excesivamente comparado con el centro.
+    * [cite_start]*Acción:* Reducir camber negativo para salvar el neumático en carrera (long run) [cite: 1268-1269].
+
+---
+
+## 3. AERODINÁMICA (AERO)
+
+### 3.1. Configuración de Carga
+* **Ajuste de Balance (% Aero):**
+    * [cite_start]**Front Wing:** Aumentar ángulo = Más carga delantera = Más Oversteer (Sobreviraje)[cite: 1313].
+    * [cite_start]**Rear Wing:** Disminuir ángulo = Menos carga trasera/drag = Más velocidad punta, pero desplaza el balance hacia delante (Oversteer) [cite: 1343-1345].
+* **Procedimiento de Eficiencia (Efficiency Match):**
+    * [cite_start]Si se busca más velocidad en recta reduciendo ala trasera, se debe compensar reduciendo ala delantera para mantener el mismo "% Aero Balance" original [cite: 1350-1354].
+
+### 3.2. Interacción Aero-Chasis (CRÍTICO)
+* **El Rake:** La diferencia de altura entre el eje trasero y delantero define gran parte del balance.
+    * [cite_start]Subir altura trasera / Bajar altura delantera = Más Rake = Más Oversteer [cite: 1086-1088].
+* **Aviso:** Cualquier cambio en muelles o altura de chasis altera el balance aerodinámico.
+    * [cite_start]*Ejemplo:* Endurecer la suspensión delantera hace que el coche baje menos en frenada/recta -> Menos Rake dinámico -> Menos carga delantera (Subviraje) [cite: 1405-1406].
+
+---
+
+## 4. CHASIS Y SUSPENSIÓN (CHASSIS)
+
+### 4.1. Tercer Muelle (Heave Spring)
+Controla el cabeceo (pitch) y la carga vertical pura (downforce).
+* **Heave Delantero (Front):**
+    * *Más Blando:* Genera más agarre mecánico en media curva.
+        * [cite_start]*Efecto Secundario:* Permite que el morro baje más en alta velocidad -> Aumenta Rake -> **Oversteer** en curva rápida [cite: 841-842, 868-871].
+    * *Más Duro:* Plataforma más estable, menos variación de rake.
+* **Heave Trasero (Rear/Third):**
+    * [cite_start]*Más Blando:* Más agarre trasero (Tracción) = **Understeer** [cite: 1071-1073].
+    * [cite_start]*Más Duro:* Mantiene la altura trasera = Más rotación/Oversteer[cite: 1074].
+
+### 4.2. Barras de Torsión y Muelles (Springs)
+* **Delanteras (Torsion Bars):**
+    * *Blandas (Diámetro pequeño):* Más agarre/rotación en medio de curva.
+    * [cite_start]*Duras (Diámetro grande):* Más reactividad, menos rotación (Understeer)[cite: 975].
+* **Traseras (Spring Rate):**
+    * [cite_start]*Blandas:* Más agarre trasero = Understeer[cite: 1022].
+    * [cite_start]*Duras:* Menos agarre trasero = Oversteer / Ayuda a rotar[cite: 1023].
+
+### 4.3. Barras Estabilizadoras (ARB)
+* **Lógica General:**
+    * *Más Blanda (Soft/Long Arm):* Más agarre en mitad de curva (roll).
+    * *Más Dura (Stiff/Short Arm):* Menos agarre, respuesta más rápida.
+* **Ajuste de Balance:**
+    * [cite_start]Subviraje en mitad de curva -> Ablandar ARB Delantera[cite: 937].
+    * [cite_start]Sobreviraje en mitad de curva -> Endurecer ARB Delantera[cite: 938].
+
+### 4.4. Amortiguadores (Dampers) - Low Speed
+Controlan la transferencia de peso en entrada (Entry) y salida (Exit).
+
+| Fase de Curva | Acción Deseada | Ajuste (Dampers) | Mecanismo |
+| :--- | :--- | :--- | :--- |
+| **Entrada (Entry)** | **Más Rotación** | Bajar Front Compression <br> Bajar Rear Rebound | [cite_start]Permite "Dive" del morro y "Lift" trasero -> Aumenta Rake [cite: 897-898, 1051-1052]. |
+| **Entrada (Entry)** | **Más Estabilidad** | Subir Front Compression <br> Subir Rear Rebound | [cite_start]Sostiene el morro y retiene la trasera -> Menos Rake [cite: 893-896, 1053]. |
+| **Salida (Exit)** | **Corregir Sobreviraje** | Bajar Front Rebound <br> Bajar Rear Compression | [cite_start]Permite que el morro suba y la trasera baje (Squat) -> Transfiere peso atrás [cite: 997-998, 1046]. |
+| **Salida (Exit)** | **Corregir Subviraje** | Subir Front Rebound <br> Subir Rear Compression | [cite_start]Mantiene el morro abajo y la trasera arriba -> Mantiene agarre delantero[cite: 1000, 1043]. |
+
+### 4.5. Frenos y Geometría
+* **Brake Bias:** Números más altos = Más freno delante. [cite_start]Ajustar hacia atrás (número menor) hasta el punto justo antes de bloquear las traseras para máxima eficiencia [cite: 958-963].
+* **Toe-In (Convergencia):**
+    * [cite_start]*Delantero Negativo (Out):* Mejora el inicio de giro (Turn-in) pero calienta/desgasta más el neumático [cite: 1012-1014].
+    * *Trasero:* Valores cercanos a cero o ligeramente positivo (In) dan estabilidad. [cite_start]Valores negativos hacen el coche muy nervioso [cite: 1060-1062].
+
+---
+
+## 5. TREN MOTRIZ (DRIVETRAIN)
+
+### 5.1. Relación de Marchas (Gear Ratio)
+* [cite_start]**1ª Marcha:** Ajustar para la salida de la curva más lenta del circuito[cite: 713].
+* [cite_start]**6ª Marcha:** Ajustar para llegar al limitador (o cerca) al final de la recta más larga **estando en rebufo (draft)**[cite: 732].
+* [cite_start]**Marchas intermedias (2-5):** Espaciado lineal/equilibrado[cite: 741].
+
+### 5.2. Diferencial (Diff)
+* **Coast Ramp (Entrada/Frenada):**
+    * [cite_start]*Número Bajo (ej. 30):* Más bloqueo en desaceleración -> **Más Rotación** (Cuidado: puede causar inestabilidad)[cite: 756, 763].
+    * *Número Alto (ej. 60):* Menos rotación / Más estabilidad.
+* **Drive Ramp (Salida/Aceleración):**
+    * *Número Bajo:* Más rotación en aceleración (Oversteer).
+    * [cite_start]*Número Alto:* Más tracción / Estabilidad (Understeer)[cite: 758].
+* **Preload:**
+    * [cite_start]Aumentar Preload = Más bloqueo estático = Más Understeer general (Entrada y Salida)[cite: 784].
+    * [cite_start]Disminuir Preload = Coche más libre / Más rotación[cite: 783].
+* **Clutch Friction Plates:** Ajuste fino de la fuerza de bloqueo. [cite_start]Más platos = Diferencial más cerrado/bloqueado[cite: 774].
+
+---
+
+## 6. TABLA RÁPIDA DE SOLUCIÓN DE PROBLEMAS
+
+| Síntoma | Solución Probable | Cita |
+| :--- | :--- | :--- |
+| **Coche "vago" en cambios de dirección** | Endurecer ARB Delantera / Endurecer Muelles | [917, 975] |
+| **Sobreviraje brusco en entrada (Entry)** | Subir Front Compression / Subir Brake Bias / Subir Diff Coast | [893, 954, 761] |
+| **Subviraje en mitad de curva (Mid)** | Ablandar ARB Delantera / Ablandar Heave Delantero | [937, 841] |
+| **Falta de tracción en salida (Exit)** | Bajar Rear Compression / Ablandar Muelles Traseros | [1046, 1022] |
+| **Sobreviraje en curva rápida (High Speed)** | Endurecer Heave Delantero (Reduce rake dinámico) / Subir Ala Trasera | [847, 1370] |
+| **Bloqueo de ruedas traseras** | Mover Brake Bias hacia delante (Número más alto) | [954] |

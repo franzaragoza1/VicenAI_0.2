@@ -1,0 +1,71 @@
+CADILLAC V-SERIES.R GTP - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: Cadillac 5.5L V8 (LMC55R) + Hybrid
+Chassis: Dallara P217 LMP2-based Carbon monocoque
+Dimensions:
+- Length: 5100mm (200.8in)
+- Width: 2000mm (78.7in)
+- Wheelbase: 3148mm (124in)
+Weight:
+- Dry: 1030kg (2271lbs)
+- Wet with driver: 1146kg (2527lbs)
+Engine:
+- Displacement: 5.5L (335CID)
+- Torque: 463lb-ft (628Nm)
+- RPM Limit: 8800
+- Power: 670bhp (500kW) combined
+
+=== OPERATION ===
+
+Starting: Turn ignition, press starter, wait for revs to stabilize
+Shifting: Paddle shift (Right Up / Left Down). Clutchless shifting once moving
+Launch: Use clutch for initial getaway only. Anti-stall active
+Hybrid Deploy: Automatic management via selected map modes
+
+=== DASHBOARD DISPLAYS ===
+
+RACE PAGE 1 & 2:
+- Primary: Gear, Speed, RPM, Lap Time
+- Hybrid Info: SoC (State of Charge), Deploy Mode, Virtual Tank
+- Tire Data: Pressures (FL/FR/RL/RR) and Temperatures
+- Systems: TC (Slip/Gain), ABS, Brake Bias, Fuel Level
+
+QUAL PAGE:
+- Focuses on Delta time and predictive lap info
+- Simplifies engine status readouts
+
+=== ADVANCED SETUP - AERO ===
+
+Ride Heights:
+- Critical for underfloor downforce generation
+- Rake (Front vs Rear height difference) shifts Aero Balance
+- Third Elements (Heave) support vertical aero loads to maintain stable platform
+
+Aero Balance:
+- Adjustable via Front Diffuser and Rear Wing angles
+- Front Aero %: Higher = Oversteer at speed; Lower = Understeer
+
+=== ADVANCED SETUP - CHASSIS ===
+
+Suspension:
+- Double wishbone pushrod front / pullrod rear (or vice versa per chassis spec)
+- Springs/Dampers: 4-way adjustable (High/Low speed Bump/Rebound)
+- ARB (Anti-Roll Bars): Control mechanical roll stiffness and balance
+
+Tires:
+- Michelin Pilot Sport. Pressure management crucial for contact patch and temp
+
+=== POWER UNIT & HYBRID ===
+
+MGU-K Modes:
+- No Deploy: Qual/Practice only. Battery charging lap
+- Qual: Max energy release over one lap
+- Attack: High deploy for overtaking, drains SoC quickly
+- Balanced: Standard Race mode, maintains SoC target
+- Build: Rapid recharging mode
+
+Brake System:
+- Brake-by-Wire (BBW) system integrates regenerative braking
+- Master Cylinder sizes affect pedal feel and modulation

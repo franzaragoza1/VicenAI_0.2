@@ -1,0 +1,158 @@
+MERCEDES-AMG F1 W12 E PERFORMANCE - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: Mercedes-AMG M12 1.6L V6
+Chassis: Double wishbone pushrod front, double wishbone pullrod rear
+Dimensions:
+- Length: 5700mm (224in)
+- Width: 2000mm (78.7in)
+- Wheelbase: 3724mm (146.6in)
+Weight:
+- Dry: 833kg (1836lbs)
+- Wet with driver: 943kg (2078lbs)
+Engine:
+- Displacement: 1.6L (98CID)
+- Torque: 530lb-ft (718Nm)
+- RPM Limit: 13000
+- Power: 1050bhp (782kW)
+
+=== OPERATION ===
+
+Starting: Turn ignition, press starter, wait for revs to stabilize
+Shifting: Clutchless shifting after initial launch. Upshift around 11,500rpm when blue lights illuminate
+Launch: Engage gear with upshift paddle, apply throttle while releasing clutch
+
+=== DASHBOARD DISPLAYS ===
+
+WARMUP PAGE:
+- SPEED: Vehicle speed
+- Gear Status Indicators: Red boxes turn green as gears are learned (8 forward gears)
+- Gear Indicator: Center display
+- Tire Surface Temps: Large white numbers (real-time)
+- Tire Carcass Temps: Blue numbers (slower to change)
+- Deploy Mode: Current hybrid system mode
+- BATT: Battery charge percentage
+- DELTA: Time difference vs session fastest lap
+- TWATER: Engine coolant temperature
+- Live Brake Bias: Orange number (changes with brake input)
+- Base Brake Bias: Below live bias (excludes migration)
+
+RACE PAGE:
+- DEPLOY: Remaining deploy mode changes this lap
+- LAP: Current lap number
+- Laptime Delta: Vs session best
+- Gear Indicator: Center display
+- Live Brake Bias: Orange number
+- LL: Fuel used previous lap (kg/lap)
+- TAR: Target fuel per lap to finish
+- Deploy Mode: Currently active
+- BATT: Battery charge percentage
+- LAST: Previous lap time (blue)
+- Fuel Bar: Green blocks = excess fuel (50g per block), Red blocks = deficit
+
+LAP END SCREEN:
+- TIME: Previous lap time
+- LAP: Current lap number
+- DELTA: Vs session best
+- FUEL DELTA: Difference from target (kg/lap)
+
+=== TIRE COMPOUNDS ===
+
+Soft (Red): High grip, shorter life, faster pace
+Medium (Yellow): Balanced grip/life/pace
+Hard (White): Lower grip, longer life, slower pace
+Race rule: Must start on qualifying compound
+
+=== TIRE SETTINGS ===
+
+Starting Pressure: Set cold. Higher = less drag/heat, less grip. Lower = more drag/heat, more grip
+Last Hot Pressure: Compare cold vs hot to analyze balance. Similar tires should build pressure at similar rates
+Tire Temps O/M/I: Carcass temps show wheel loads and work done. Center temps compare tire work. Inner/Outer analyze alignment
+Tread Remaining: Indicates alignment issues but never prioritize over temperatures
+
+=== AERODYNAMICS ===
+
+Downforce Trim:
+- High: Most grip, most drag
+- Medium: Balanced
+- Low: Least grip, least drag
+
+Front Flap Offset: Higher = more downforce, forward aero balance. Lower = less downforce, rearward balance, less drag
+
+Rear Wing Gurney: Increases height = more rear downforce and drag, rearward balance. Decreases = less downforce/drag, forward balance
+
+Aero Calculator:
+- Front/Rear RH at Speed: Input on-track heights from telemetry to calculate aero balance
+- Aero Balance: Percentage of downforce on front axle. Monitor to prevent unexpected changes
+- Downforce to Drag: Efficiency ratio. Higher = efficient, lower = slippery/low-drag
+
+=== CHASSIS - FRONT ===
+
+Weight Distribution: Higher % = weight forward, more stable at speed, less rotation. Lower % = weight rear, twitchier at speed, more rotation
+
+Heave Rate: Controls vertical travel. Stiffer = less travel, better aero, less mechanical grip. Softer = more mechanical grip, risk of bottoming
+
+Roll Rate: Higher = stiffer, less roll, more understeer, less camber change. Lower = softer, more roll, less understeer, more camber change
+
+Ride Height: Lower front = more downforce, forward aero balance, less drag
+
+=== CHASSIS - FRONT CORNERS ===
+
+Camber: Negative recommended. Higher negative = more cornering in camber direction, less braking. Use asymmetric for directional tracks
+
+Toe-In: Negative (toe-out) = more turn-in, less stability. Positive (toe-in) = more stability, sluggish response
+
+=== CHASSIS - REAR ===
+
+Fuel Level: Adjustable, can be removed for setup work
+
+Heave Rate: Controls vertical travel. Greatly influences rake angle, affecting downforce and balance. Stiffer = less travel, better aero. Softer = better mechanical grip, risk of bottoming
+
+Roll Rate: Higher = stiffer, less roll, more oversteer. Lower = softer, more roll, less oversteer
+
+Ride Height: Higher rear = more overall downforce, forward balance, more drag
+
+=== CHASSIS - REAR CORNERS ===
+
+Camber: Negative recommended. More camber = more stability at high speed/load, less traction on throttle. Use asymmetric for directional tracks
+
+Toe-In: Each wheel adjustable individually. Positive toe-in = more stability, helps throttle application. Less toe-in = better rotation, less stable
+
+=== DIFFERENTIAL ===
+
+Entry Preload: Static locking during deceleration only. More = understeer on decel. Less = oversteer on decel
+
+Entry: Deceleration/turn-in phase. Higher = more locking, understeer. Lower = less locking, oversteer. (In-car: ENTRY)
+
+Middle: Transition between decel/accel. Higher = understeer on decel, oversteer on accel. Lower = oversteer on decel, understeer on accel. (In-car: MID)
+
+High Speed: Acceleration/heavy throttle. Higher = more locking, oversteer. Lower = less locking, understeer. (In-car: HISPD)
+
+=== POWER UNIT ===
+
+MGU-K Deploy Modes (4 changes per lap max):
+
+No Deploy (Qual/Practice only): No electrical deployment, charges battery fully
+
+Qual (Qual/Practice only): Deploys nearly all energy over one lap. Use after No Deploy on out lap
+
+Attack (Practice/Race only): Aggressive draw for overtaking. Use sparingly, costs performance to recharge. Use end of race or critical overtakes
+
+Balanced (Practice/Race only): Maintains 80% SoC average. Takes 2-3 laps to stabilize from 100%. Primary race mode
+
+Build (Practice/Race only): Targets 100% SoC. Use when desperate to build charge. Stop using once stabilized to avoid energy loss
+
+Engine Braking: Lower setting = more engine braking, more oversteer off-throttle. Higher = less braking, more understeer. (In-car: EB)
+
+=== BRAKE SYSTEM ===
+
+Base Brake Bias: % to front brakes. Higher = more front, stable but risks front lock, slight understeer. Lower = more rear, easier turn-in, risks rear lock/spin. (In-car: BBAL)
+
+Dynamic Ramping: Sets pedal travel point where bias ramping begins
+
+Brake Migration: Shifts bias forward 1-9% (setting 1-10) past ramping point at full pedal. Adapts to high aero loads at speed. (In-car: BMIG)
+
+Total Brake Bias: Maximum bias at full pedal = Base + Migration
+
+Brake Magic Modifier: Pre-set heavy front bias for heating brakes/tires on warm-up laps. Garage value as decimal (0.75 = 75%)

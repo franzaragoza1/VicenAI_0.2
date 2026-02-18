@@ -1,0 +1,68 @@
+NASCAR NEXT GEN (CHEVY/FORD/TOYOTA) - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: 5.86L (358CID) V8 Naturally Aspirated
+Chassis: Steel tube frame with safety clips
+Dimensions:
+- Length: 4902mm (193.0in)
+- Width: 1994mm (78.5in)
+- Wheelbase: 2794mm (110.0in)
+Weight:
+- Minimum without driver: 1383kg (3050lbs)
+- Wet with driver: 1542kg (3400lbs) approx
+Engine:
+- Displacement: 5.86L (358CID)
+- Torque: 420-550lb-ft (depending on package)
+- RPM Limit: 9800
+- Power: 510bhp (Short Track/RC) or 670bhp (Intermediate)
+
+=== OPERATION ===
+
+Starting: Ignition Switch, Starter Button
+Shifting: 5-Speed Sequential Transaxle. Stick shift.
+- Upshift: Pull back. No clutch needed if rev-matched/lifted
+- Downshift: Push forward. Blip required
+Launch: Clutch required
+Pit Limiter: Dashboard lights indicate RPM range for pit speed
+
+=== DASHBOARD DISPLAYS ===
+
+PAGE 1:
+- RPM: Digital bar/graph
+- Temperatures: Water, Oil
+- Pressures: Oil, Fuel
+- Lap Time: Previous/Best
+
+PAGE 2:
+- Pit Speed Focus: Lights/RPM indicators emphasized
+- Fuel: Pressure and voltage
+
+PAGE 3:
+- Diagnostics: Voltage, System temps
+
+=== CHASSIS SETUP ===
+
+Suspension:
+- Independent Rear Suspension (IRS) - Major change from Gen 6
+- Dampers: 4-way adjustable (Ohlins TTR)
+
+Springs/Ride Height:
+- Ride Height: Critical for aero. Measured at chassis blocks
+- Shock Springs: Control vertical stiffness
+- Packers/Shims: Used to fine tune height
+
+Alignment:
+- Camber: High positive LF / High negative RF (Oval setup)
+- Toe: Adjustable front and rear (Rear toe steers the car)
+- Skew: Rear toe adjustments affect crab-walking/skew for aero advantage
+
+=== AERO & TIRES ===
+
+Aero:
+- Diffuser: Rear underbody diffuser sensitive to rear ride height
+- Spoiler: Height determined by track package (Short/RC vs Intermediate vs Super Speedway)
+
+Tires:
+- 18-inch wheels with single center-lock lug nut
+- Pressures: Critical for stagger and handling balance

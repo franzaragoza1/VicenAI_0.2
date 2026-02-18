@@ -1,0 +1,261 @@
+DALLARA IR18 - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: Turbocharged V6 with Push-to-Pass
+Chassis: Double A-arm pushrod with third spring (front and rear)
+Dimensions:
+- Length: 5000mm (196.9in)
+- Width: 2011mm (79in)
+- Wheelbase: 3023-3073mm (119-121in) - adjustable
+Weight:
+- Dry: 845kg (1862lbs)
+- Wet with driver: 900kg (1984lbs)
+Engine:
+- Displacement: 2.2L (134.3CID)
+- Torque: 300lb-ft (410Nm)
+- Power: 700bhp (522kW)
+- RPM Limit: 12000
+
+=== OPERATION ===
+
+Starting: Select upshift to engage gear, apply throttle
+Shifting: Sequential, clutchless both directions. Downshift protection prevents over-rev damage
+
+=== DASHBOARD ===
+
+Left Cluster:
+- MAP: Current engine map
+- REGEN: Current regen level
+- RARB: Rear ARB setting
+- FARB: Front ARB setting
+- WJ POS: Weight jacker setting
+- BIAS: Current brake bias
+
+Right Cluster:
+- OT: Push-to-Pass time remaining (seconds)
+- Fuel: Remaining (gallons/liters)
+- MPG/LPL: Fuel economy (Miles Per Gallon or Liters Per Lap)
+- DEPLOY: Current deploy level
+- Tire Temp: Live temps (°F/°C)
+
+Middle:
+- Gear Indicator: Large center number
+- Laptime: Previous lap
+- Delta: Difference vs session best
+- Lap Counter: Laps completed
+
+Pit Limiter: All shift lights flash blue, yellow border. Box shows: Green = below limit, Yellow = at limit, Red = speeding
+
+Push-to-Pass Active: Inner LED pairs green, green border
+
+Shift Lights: Green → Yellow → Red left to right as RPM increases. All blue flashing = shift now
+
+Caution Lights: Right-side cluster of 3 LEDs yellow when caution active
+
+Hybrid Status Light: 3-LED cluster left side. Red = Regeneration, Green = Deploy
+
+Hybrid State of Charge: Two LED clusters either side. Not deploying: Red/yellow/green show charge (8 LEDs full charge). Deploying: 7 blue + 1 red
+
+=== TIRES ===
+
+Tire Compound (Road courses only):
+- Primary: Harder, less grip, longer life
+- Alternate: Softer, more grip, shorter life
+Not allowed on ovals
+
+Cold Pressure: Set on load. Higher = less drag/heat, less grip. Lower = more drag/heat, more grip. Ovals: higher right-side minimum than left
+
+Last Hot Pressure: Compare cold vs hot for balance. Heavier-loaded tires show larger difference. Adjust cold so similar tires reach similar hot pressures
+
+Last Temps O/M/I: Carcass temps within tread. Center temps compare work. Inner/Outer analyze alignment and pressure
+
+Tread Remaining: Identifies alignment issues. Never prioritize over temps for balance
+
+=== AERODYNAMICS - FRONT ===
+
+Wing Flap Config: Mandated by Indycar rules. Road courses = 2 upper flaps. Ovals = 1 upper flap
+
+Wing Mainplane Extension: Small elements on mainplane. ON = more front downforce/drag, rearward aero balance. OFF = less downforce/drag, forward balance
+
+Wing Wicker (track dependent):
+- Road Course: Single wicker on uppermost flap allowed
+- Large Oval, no Mainplane Ext: Steps 1-3 (thirds of span covered). Step 2 = 2/3 span, Step 3 = full span
+- Large Oval, with Mainplane Ext: Steps 2-3 not available. No wicker = inner half extension. Step 1 = outer extension + wicker, full-span
+- Short Oval: Not allowed
+
+Wing Endplate Angle: Rotate up to 3° positive/negative. Higher = more downforce, forward aero, changes mainplane angle range. Not available road courses/short ovals
+
+Wing Angle: Mainplane angle vs horizontal. Higher = more downforce, forward aero, more drag. Lower = less downforce, rearward aero, less drag. Can run negative angles (still produce downforce, greatly reduce drag for high-speed ovals)
+
+=== AERODYNAMICS - BODY ===
+
+Radiator Inlet: Block sidepod inlets partially. More closed = less drag, slight downforce reduction, higher engine temps. 77% closed = Qualifying only
+
+Trailing Edge Wicker: 1" tall on upper diffuser edge. Road courses and short ovals only. Increases downforce, rearward aero, more drag
+
+Diffuser:
+- Sidewalls: ON/Trimmed/OFF. OFF = less drag, large downforce reduction. Trimmed = between ON and OFF
+- Strakes: Internal vertical strakes. ON = more downforce/drag. Z+15 = 15mm extension for more downforce
+- Large Ovals: Sidewalls and Strakes mandated OFF
+
+=== AERODYNAMICS - REAR ===
+
+Wing Flap Config:
+- Road Courses: Single or Double Plane. Double = significant downforce, rearward aero, high drag. Single = greatly reduced downforce/drag, forward aero
+- Ovals: Single Plane only
+
+Wing Angle: Uppermost flap angle. Higher = more downforce/drag, rearward aero. Lower = less downforce/drag, forward aero. Range changes with assembly type and flap config
+
+Wing Wicker (track dependent):
+- Road Course/Short Oval: No wicker or full-span ⅜"
+- Large Ovals (except Indy): Not allowed
+- Indianapolis Oval: ⅜" tall, widths 13.2", 24.5", or full-span. Centered on wing centerline. Can be removed
+
+=== AERO CALCULATOR ===
+
+Reference tool only. Rear wing changes apply to car, heights don't
+
+Avg Front/Rear RH at Speed: Input on-track heights from telemetry (average of sensors)
+
+Avg Tilt at Speed: Chassis roll left/right. Calculate average left-side heights minus average right-side heights from telemetry
+
+Aero Balance: % downforce on front axle. Monitor during setup to prevent unexpected changes
+
+Downforce to Drag: Efficiency ratio. Higher = efficient, lower = slippery/low-drag
+
+=== CHASSIS - GENERAL ===
+
+Wheelbase: Large Ovals/Indianapolis = 121" or 119". Road Courses/Short Ovals = 121" only. Longer = more stable, less responsive, less sensitive to aero/weight shifts. Shorter = more responsive, more sensitive
+
+Brake Pressure: Higher downforce = higher pressure possible. Lower downforce = reduced pressure needed
+
+Brake Pressure Bias: % to front. Higher = more front, understeer under braking. Lower = more rear, oversteer. Set to avoid lockups
+
+Steering Pinion: Higher teeth = faster response, twitchier. Lower = slower, less responsive
+
+Steering Offset (Ovals): Centers wheel on straights when setup is asymmetric. Positive = clockwise, Negative = counter-clockwise
+
+Nose Weight: % on front axle. Higher = more stable, understeer if too far. Lower = oversteer, easier direction changes. Generally set higher than aero balance %
+
+Crossweight: % over RF and LR wheels. Shown as difference across front axle relative to LF. Higher (more negative to LF) = understeer left turns, oversteer right. Lower (higher to LF) = oversteer left, understeer right
+
+=== CHASSIS - FRONT ===
+
+3rd Spring (Road courses only): Polymer bump stop. Works in heave only. Prevents dropping under heavy aero loads/vertical forces. Allows softer corner springs for mechanical grip. Not available ovals
+
+3rd Spring Gap: Distance to compress before engagement. Higher gap = more travel needed. Polymer increases rate as compressed (low compression = low rate, high compression = very high rate). Fine-tunes bump behavior at high speeds/loads
+
+Bar Diameter: Large/Small/None. Large = stiffer, less grip, understeer, flatter. Small = softer, more grip, less understeer, more roll. None = dramatically softer, large grip increase, oversteer. If removed, other ARB settings have no effect
+
+Bar Blades: Steel or Titanium. Steel = stiffer, understeer. Titanium = softer, less understeer. No weight difference
+
+Bar Blade Position: 1 (softest) to 6 (stiffest). Higher = stiffer, understeer. Lower = softer, less understeer. (In-car: ARB F)
+
+Drop-Link Position: Wide (Slow) = slower loading, softer effective stiffness, less understeer. Narrow (Fast) = faster loading, stiffer, understeer
+
+ARB Preload: Removes static loads from adjustments to prevent asymmetric behavior. On ovals: manage crossweight in banking transitions
+
+=== CHASSIS - FRONT CORNERS ===
+
+Ride Height: Reference from ground to chassis at front axle centerline. Not actual clearance. Low = good aero/mechanical but avoid track contact. Affects balance, downforce, drag
+
+Pushrod Length: Add/remove shims. Very fine adjustment. Watch corner weights and crossweight, especially asymmetric adjustments
+
+Spring Rate: Force per displacement. Stiffer = less wing movement, less mechanical grip, understeer slow corners. Softer = more movement, hurts aero, more mechanical grip, less understeer
+
+Camber: Negative recommended. Higher negative = more cornering force in camber direction, more aggressive turn-in, less braking. Road courses = all negative. Ovals = right-side negative, left-side positive. Less-loaded tires can't use as much camber
+
+Caster: Angle through upper/lower ball joints (steering axis). Positive = upper farther back. Not allowed negative. Increasing = more pneumatic trail (stability, heavier feel), more jacking forces (load to inside front, decreases crossweight turn-in, helps turn but increases outside roll), more rolling drag. Ovals: often asymmetric (LF lower than RF for natural left steer, decreased crossweight turn-in)
+
+Toe-In: Negative (toe-out) = better turn-in, less stability, more temp/wear. Positive (toe-in) = more stability, less turn-in. Ovals: often wildly different L/R due to asymmetric loading. RF can use more toe-out (sees higher load)
+
+=== CHASSIS - REAR CORNERS ===
+
+Ride Height: Reference from ground to chassis centerline. One value shown in garage, two in telemetry. Not actual clearance. Affects balance, downforce, drag
+
+Pushrod Length: Add/remove shims. Watch corner weights and crossweight. Important since left-right tilt can't be identified (only one ride height value)
+
+Spring Rate: Force per displacement. Stiffer = less movement, less mechanical grip, oversteer slow corners. Softer = more movement, hurts aero, more mechanical grip, less oversteer
+
+Camber: Negative recommended. Higher negative = more cornering force (stability high-speed), less on-throttle traction. Road courses = all negative. Ovals = right-side negative, left-side positive. Less-loaded tires can't use as much camber
+
+Fuel Level: Amount in tank at load
+
+=== CHASSIS - REAR ===
+
+3rd Spring (Road courses only): Polymer bump stop. Works in heave only. Prevents dropping under heavy loads. Allows softer corner springs. Not available ovals
+
+Toe-In: Negative = front farther from center. Positive = front closer. Toe-in = more stability, less rotation. Lower (toward toe-out) = quicker response, unstable. Ovals: often wildly different to manage slip angle. Rear-steer influenced by toeing out RR, toeing in LR (increases yaw, aero benefits high-speed, oversteer on throttle)
+
+3rd Spring Gap: Distance to compress before engagement. Higher = more travel needed. Polymer increases rate as compressed. Fine-tunes bump behavior
+
+Weight Jacker (Ovals only): Mounted to RR spring. Adjusts crossweight in-car. Positive = preload spring, decrease crossweight, raise RR. Negative = unload spring, increase crossweight, lower RR. Must be zero for tech (road courses). (In-car: Weight Jacker)
+
+=== CHASSIS - REAR ARB ===
+
+ARB Diameter: Large/Small/None. Large = stiffer, less grip, oversteer, flatter. Small = softer, more grip, less oversteer, more roll. None = dramatically softer, large grip increase, understeer. If removed and rear springs too soft = risk lifting inside front on turn-in (brake lockup). If removed, other ARB settings no effect
+
+ARB Drop-Link Position: Wide (Slow) = slower loading, softer effective stiffness, less oversteer. Narrow (Fast) = faster loading, stiffer, oversteer
+
+ARB Blades: 1 (softest) to 6 (stiffest). Higher = stiffer, oversteer. Lower = softer, less oversteer. (In-car: ARB R)
+
+ARB Preload: Removes static loads to prevent asymmetric behavior. Ovals: manage crossweight in banking transitions
+
+Vinyl Wrap on Wheel Rims: Enables paint template section on rims (no performance effect)
+
+Vinyl Wrap on Suspension: Applies paint template to suspension arms, replaces carbon fiber texture (no performance effect)
+
+=== DAMPERS ===
+
+Low Speed Compression: Low shock piston speed resistance. Higher = more resistance, faster weight transfer. Front: more = understeer braking. Rear: more = helps rotation, reduces on-throttle traction. For aero: more slows vertical movement
+
+High Speed Compression: High speed travel (kerbs, bumps). Higher = stiffer (good for avoiding track contact). Lower = absorbs bumps better, may hurt aero consistency
+
+Low Speed Rebound: Low speed extension resistance. Higher = resists expansion, better aero control, risk of unloading wheels, oscillations. Front: higher = on-throttle understeer. Lower = maintain grip, less understeer. Rear: more = less rear grip braking. Less = maintains grip during forward pitch
+
+High Speed Rebound: Extension over bumps/kerbs. Higher = slower extension. Lower = extends easier. Set low enough for return after bump but not so high tire becomes unloaded
+
+=== ENGINE & HYBRID ===
+
+Engine Map Setting:
+- Setting 1: Max power, highest fuel consumption
+- Settings 2-5: Fuel saving. Power reduces as value increases, fuel usage reduces
+- Setting 6: Full power, more linear throttle than 1-5 and 7
+- Setting 7: Full power, more digressive throttle than 1 and 6
+- Setting 8: Cautions/pace laps. Dramatically reduced fuel/power
+
+Turbo Boost Pressure: Indianapolis oval only. Different mapping, more power. More heat, more fuel. Not recommended for race
+
+Regen Level: Automatic regen when lifting. 1.0 = full regen. Values scale down (0.5 = 50% of full)
+
+Deploy Level: Manual deployment amount. 1.0 = full. Values scale as fraction
+
+=== GEARBOX & DIFFERENTIAL ===
+
+First - Sixth Gear: All six gears adjustable. Lower ratio = less acceleration, more top speed. Higher = more acceleration, less top speed. Expected top speed updates after Apply
+
+Final Drive: Alters entire acceleration/speed profile without changing individual gears. Higher = more acceleration, less top speed. Lower = more top speed, less acceleration. Updates all six gear max speeds after Apply
+
+Differential (Road Courses only - Ovals use spool):
+
+Clutch Plates: Multiplies locking force. More plates = more understeer off-throttle, more oversteer on-throttle. Fewer = more oversteer off-throttle, more understeer on-throttle
+
+Preload: Static locking always present. More = understeer braking, oversteer throttle. Less = oversteer braking, understeer throttle
+
+Ramp Angles: Coast (decel) and Power (accel). Lower angle = more locking. Higher = less locking
+- Coast: More locking (lower) = understeer. Less locking (higher) = oversteer
+- Power: More locking (lower) = oversteer on throttle. Less locking (higher) = understeer
+Independent adjustments good for fine-tuning entry/exit after using Preload and Plates
+
+=== SETUP TIPS ===
+
+Gearing: Be close to limiter at end of longest straight. Allow for RPM increase in draft and/or push-to-pass
+
+Aerodynamic Adjustments: Change aero balance while adjusting front/rear together to add/remove downforce without significant balance change. Note aero balance % before changes, match after to maintain, or purposely aim above/below to change. Higher aero balance value = more forward (oversteer)
+
+Mechanical Adjustments: Low-speed corners benefit less from aero. ARB settings simplest - don't significantly compromise aero. More oversteer = smaller front bar or larger rear bar. Steel to Titanium blades = oversteer. More understeer = larger front or smaller rear bar. Titanium to Steel = understeer
+
+Differential Adjustments: Preload extremely effective without affecting chassis. Greater preload = less rotation braking, more on throttle. Lower preload = more rotation braking, less on throttle
+
+Ride Heights and Third Spring Gap: May bottom under heavy load. If bottoming upsets handling or adds drag, raise static height or decrease third spring gap (may hurt aero efficiency). Raise height by increasing both L/R pushrod length. Unequal front/rear changes alters aero balance (check calculator). Heights increase slightly as fuel burns. Decreasing third spring gap engages progressive bump rubbers earlier, increases functional spring rate. Keeps from bottoming but excessive engagement mid-corner causes instability over rough surfaces

@@ -1,0 +1,86 @@
+COACH DAVE ACADEMY - IRACING SETUP GUIDE
+
+=== SETUP PHILOSOPHY ===
+
+Goal: Create setups tailored not just for a fast qualifying lap but for consistent performance across entire race stints.
+Compromise: Every adjustment is a tradeoff (e.g., grip vs. top speed, stability vs. rotation).
+Qualifying vs. Race:
+- Qualifying: Aggressive, maximizes grip at the cost of tyre life and fuel consumption.
+- Race: Prioritizes consistency, drivability, and tyre preservation over raw one-lap pace.
+Testing: The best way to know what works is to test, test, and test some more.
+
+=== TYRES ===
+
+Compounds:
+- Soft: Fastest but high wear. Rapid early performance, drops off quickly.
+- Medium: Balanced. Slower than soft but maintains grip longer.
+- Hard: Slowest but most durable.
+
+Pressures:
+- Affects contact patch and heat generation.
+- Lower Pressure: Increases grip and rolling resistance/heat.
+- Higher Pressure: Reduces drag and heat, decreases grip but improves responsiveness.
+
+Management:
+- Crucial for RWD high-power cars (e.g., GTP/LMDh). Smooth throttle and "lift and coast" help manage rear tyre temps.
+
+=== AERODYNAMICS ===
+
+General Rule: More aero = Better grip but reduced top speed (Drag).
+Aero Balance:
+- Front Aero: Increasing reduces understeer, increases front grip.
+- Rear Aero: Increasing reduces oversteer, increases rear grip.
+- Balance: Vital to keep front/rear values aligned to prevent instability.
+
+Ride Height (Rake):
+- Controls mechanical grip and aero platform.
+- Lower Front: Shifts balance forward (Rear Oversteer).
+- Lower Rear: Shifts balance rearward (Understeer).
+- Stalling: Too low can cause aero stall (sudden loss of downforce).
+
+=== CHASSIS - SUSPENSION ===
+
+Springs (Spring Rate):
+- Stiff Front: Reduces load transfer to front tyres. Causes entry understeer.
+- Stiff Rear: Reduces rear load transfer. Reduces bump absorption.
+- Tuning Oversteer: Stiffen Front Springs (Fast corners), Soften Rear Springs (Slow corners).
+- Tuning Understeer: Soften Front Springs, Stiffen Rear Springs.
+
+Anti-Roll Bars (ARB):
+- Control roll stiffness and balance in steady-state cornering.
+- Stiff Front ARB: Increases Understeer (Stability).
+- Stiff Rear ARB: Increases Oversteer (Rotation).
+
+Dampers:
+- Control the rate of spring compression/release.
+- Slow Dampers: Manage weight transfer during braking, acceleration, and cornering.
+- Fast Dampers: Manage bumps and kerbs.
+- Tuning: If car is twitchy/unpredictable, reduce damper values.
+
+=== CHASSIS - GEOMETRY ===
+
+Toe:
+- Front Toe: Adjusts turn-in response. Toe-out (negative) generally increases initial turn-in.
+- Rear Toe: Controls straight-line stability. More Toe-in (positive) = More stability, Less rotation. Less Toe-in = Better rotation.
+
+Camber:
+- Negative Camber: Increases cornering grip by optimizing contact patch under load.
+- Tradeoff: Excessive camber reduces braking efficiency and acceleration traction.
+
+=== DRIVETRAIN ===
+
+Differential (Diff):
+- Preload: Force required to unlock the diff.
+  - Higher Preload: More stable on exit, harder to rotate mid-corner.
+  - Lower Preload: Better rotation, but car becomes more reactive/lively.
+- Power/Coast Ramps: Control locking behaviour on throttle vs. braking.
+
+Gearing:
+- Adjust stack to suit track top speed and corner exit RPM.
+
+=== BRAKES ===
+
+Brake Bias:
+- Shifts braking force between front and rear axles.
+- Forward Bias: More stability, risk of front lockup (Understeer).
+- Rear Bias: Better turn-in, risk of rear lockup/spin (Oversteer).

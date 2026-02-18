@@ -1,0 +1,220 @@
+LIGIER JS P320 - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: Naturally aspirated Nissan V8
+Chassis: Double wishbone with pushrod-actuated inboard springs
+Dimensions:
+- Length: 4605mm (181in)
+- Width: 1900mm (75in)
+- Wheelbase: 2860mm (112in)
+Weight:
+- Dry: 950kg (2094lbs)
+- Wet with driver: 1115kg (2458lbs)
+Engine:
+- Displacement: 5.6L (341CID)
+- Torque: 402lb-ft (545Nm)
+- Power: 460bhp (343kW)
+- RPM Limit: 7000
+
+=== OPERATION ===
+
+Starting: Press clutch, pull upshift to engage gear, apply throttle while releasing clutch
+Shifting: Clutchless both directions after launch
+Upshift timing: Around 6600rpm when all shift lights fully illuminated
+Recommend: Map controls for Brake Bias and Traction Control for on-track adjustments
+
+=== DASHBOARD ===
+
+Single page layout:
+
+Top:
+- Last: Previous lap (upper left, blue)
+- Best: Session best (upper right, pink)
+
+Center:
+- Gear Indicator: Middle
+- RPM: Just beneath gear
+- Tyre Press: Live pressures center (PSI for Imperial, Bar for Metric)
+
+Left:
+- Fuel Used: Since leaving pits (US Gallons for Imperial, Liters for Metric)
+- Fuel Lap: Previous lap fuel used (gallons/liters) - updates each lap
+
+Right:
+- DIFF: Live split vs Best lap (green = faster, red = slower)
+- Speed: Vehicle speed (MPH for Imperial, KPH for Metric)
+
+Bottom:
+- OIL P: Oil pressure (PSI for Imperial, Bar for Metric)
+- TC: Current TC setting (yellow box, displays "OFF" when 0)
+- PPS: Current throttle shape (purple box)
+- Water T: Coolant temp (°F for Imperial, °C for Metric)
+
+Pit Limiter Page:
+- Gear: Upper left large number
+- Speed: Upper right (kph/mph)
+- TC Map: Current TC mapping
+- Fuel Used: Volume since pitted (L/gal)
+- Brake Balance: Current setting
+- Pedal %: Live throttle position
+- Tyre Pressure: Live (bar/PSI)
+- Water T: Coolant temp (°C/°F)
+- PPS Map: Current Throttle Shape
+
+Shift Lights: Not tied to specific RPM. Timed to illuminate based on RPM acceleration, showing shift indication at optimum point based on acceleration aggressiveness
+
+Racelogic Display: Left of driver, top of dash. Shows current split vs session best with graphical bar. Positive split + bar right of center = slower lap. Negative split + bar left = faster lap. When lap completes: shows previous lap time and split for new lap
+
+=== TIRES ===
+
+Tire Type: Dry (slick) for dry conditions. Wet (treaded) for rain/wet
+
+Starting Pressure: Set on load. Lower = more mechanical grip, more rolling drag, faster heat buildup. Higher = less heat/drag, less grip. Higher speeds/loads = higher pressures. Slower/tighter tracks = lower pressures
+
+Last Hot Pressure: Compare cold vs hot. Heavier-loaded tires show larger difference. Ideally similar tires build pressure at same rate to prevent balance change. Adjust cold so similar tires reach similar hot pressures
+
+Last Temps: Carcass temps after pit return or driver exit. Center temps compare work. Inner/Outer analyze alignment (predominantly camber). Three zones: Inside, Middle, Outer (relative to chassis centerline)
+
+Tread Remaining: After pit return or driver exit. Identifies alignment issues (excessive one-sided wear). Use with temps for balance analysis. Same zones as temps
+
+=== AERODYNAMICS ===
+
+Front Dive Planes: Surfaces beneath headlights on fenders. Dramatically increase front downforce, shift forward, slight drag increase. Three options:
+- High Downforce (HDF): Full dive plane, greatly increase downforce/drag
+- Medium Downforce (MDF): Partial dive plane, less drag than HDF, less downforce
+- Low Downforce (LDF): Remove completely (when top speed absolutely crucial)
+
+Deck Gurney Setting: Small flap at rear of car. Using = more rear downforce, more total downforce, more drag
+
+Rear Wing Angle: Angle of attack of entire assembly. Higher = more downforce, rearward balance, more drag. Lower = less drag/downforce, forward balance. Important to tune for track: High-speed tracks = lower angle (less drag). Slower twisty = high angle (more downforce)
+
+Rear Wing Flap Angle: Second element adjustable independently. Fine-tunes rear downforce. Higher = more downforce/drag rear. Lower = less downforce/drag. Value is offset to reference angle, can be negative (still produces downforce)
+
+=== AERO CALCULATOR ===
+
+Reference tool only. Rear wing changes apply, heights don't
+
+Front/Rear RH at Speed: Input from telemetry at any point for calculations
+
+Downforce Balance: % front downforce. Higher % = more front downforce, oversteer mid-high speed. Lower % = more rear downforce, understeer mid-high speed
+
+L/D: Ratio of Lift to Drag. Quantifies efficiency. Higher L/D = more downforce per unit drag = more efficient. Higher without sacrificing overall downforce = faster, more efficient. Optimum varies by config and track type
+
+=== CHASSIS - FRONT ===
+
+Heave Spring: Handles external loads from purely vertical loads, doesn't control roll. Generally for increasing downforce at higher speeds, dips/crests, heavy braking. Higher rates = stiffer heave, good for controlling heights for aero platform, can produce bouncing on rough. Lower = absorbs bumps/loads easier, hurts aero platform (excessive movement)
+
+Heave Perch Offset: Adjusts preload on heave spring. One of two height adjustment methods through heave. Lower values = more preload, raise front heights. Higher = unload spring, lower front heights
+
+Heave Spring Deflection: Amount heave spring compressed under static conditions (display of preload). Can change from almost any chassis adjustment. Pay special attention to keep same after changes. Directly adjustable via Heave Perch Offset. Higher = more static compression, more preload
+
+Heave Slider Deflection: How far slider mechanism (keeps heave spring moving linearly) compressed from fully extended. No chassis handling influence. Shows available travel before bottoming
+
+Pushrod Length Adjustment: Adjusts both front pushrods together (offset from baseline). Great way to adjust front height without altering heave spring preload or front Torsion Bars
+
+ARB Size: Alters front roll stiffness. Increasing = stiffer, less roll, understeer, more responsive feel. Decreasing = softer, more roll, less understeer, less responsive, more grip
+
+ARB Setting: Fine-tuning adjustment for overall ARB assembly stiffness. Soft = least roll resistance, oversteer. Hard = most roll resistance, understeer. Medium = between two
+
+Toe-In: Negative (toe-out) = more turn-in, less stability. Positive (toe-in) = more stability, sluggish response
+
+=== CHASSIS - FRONT CORNERS ===
+
+Corner Weight: Static weight per tire. Critical for optimization. Adjusted via Spring Perch Offset
+
+Ride Height: Distance from ground to chassis reference point. Not actual clearance, reliable static value. Increasing front = less overall downforce, rearward aero balance, less drag. Decreasing = more downforce, forward aero, slightly more drag
+
+Spring Perch Offset: Adjusts height at corner via upper perch installed position. Increasing = less preload, lower corner. Decreasing = more preload, raise corner. Keep symmetrical L/R to ensure same heights, no crossweight change
+
+Spring Rate: Force per displacement. Maintains chassis from track contact under loads, manages aero attitude. Stiffness has major handling influence. Stiffer = less front splitter movement under aero loads, less mechanical grip, understeer slow corners. Softer = more movement (hurts aero), more mechanical grip, less understeer. Must be symmetrical (homologation), change in pairs only
+
+Shock Deflection: How much shock compressed from fully extended. Not representation of loading. Shows available travel before running out and contacting travel-limiting devices. Watch extension travel - tire unloaded when deflection reaches zero
+
+Camber: Negative recommended all four. Higher negative = more cornering force, less braking grip. Excessive = high cornering but reduced life. Balance life vs performance
+
+=== CHASSIS - REAR CORNERS ===
+
+Corner Weight: Static weight per tire. Critical for optimization. Adjusted via Spring Perch Offset
+
+Ride Height: Distance from ground to chassis reference point. Not actual clearance. Raising rear = more overall downforce, aero to front, more drag. Decreasing = opposite, aero shifts rearward, less overall downforce/drag
+
+Spring Perch Offset: Adjusts height and weight via preload. Decreasing = more preload, more weight, higher height. Increasing = opposite. Adjust in pairs or all four to prevent crossweight changes
+
+Spring Rate: Force per displacement. Maintains height and aero attitude under changing loads. Stiffer = better aero platform, less mechanical grip. Softer = better bumps, more grip, hurts aero. Must be symmetrical (homologation), change in pairs only
+
+Spring Deflection: How far spring compressed from unloaded length. Shows preload under static conditions. Compare against other corners. Higher = more preload
+
+Shock Deflection: How much shock compressed from fully extended. Not representation of loading. Shows available travel before running out. Watch extension travel - tire unloaded when reaches zero. Especially important rear during braking and high-rake configs (running out = sudden oversteer)
+
+Camber: Negative recommended all four. Higher negative = more cornering force, less braking grip. Excessive = high cornering but reduced life. Balance life vs performance. Higher rear = more cornering stability, less straight-line braking stability. Lower = often better traction low-grip corner exits
+
+Toe-In: Toe-in = front closer to center than rear. Toe-out = opposite. Adding toe-in = more stability, may hurt direction changes
+
+=== CHASSIS - REAR ===
+
+Third Spring: Vertical movement resistance only, no roll effect. Controls increasing aero loads, maintains proper aero attitude. Crucial for controlling rear height to maximize rear bodywork downforce
+
+Third Perch Offset: Adjusts preload on rear third spring. One of two height adjustment methods through third spring. Lower values = more preload, raise rear heights. Higher = unload spring, lower rear heights
+
+Third Spring Deflection: Amount rear third spring compressed under static conditions. Not directly adjustable. Changes with Third Perch Offset and rear Spring settings
+
+Third Slider Deflection: How far slider mechanism third spring mounted on compressed from fully extended. Similar to shock but no damping forces. Doesn't influence suspension behavior
+
+ARB Size: Alters rear roll stiffness. Increasing = stiffer, less roll, oversteer. Decreasing = softer, more roll, less oversteer, less responsive, more grip
+
+ARB Setting: Fine-tuning adjustment for overall ARB assembly stiffness. Soft = least roll resistance, understeer. Hard = most roll resistance, oversteer. Medium = between two
+
+Pushrod Length Adjustment: Adjusts both rear pushrods together (offset from baseline). Great way to adjust rear height without altering third spring preload or rear corner springs
+
+Fuel Level: Amount in tank at garage exit
+
+Diff Preload: Static load applied. Higher = more locking all conditions, understeer acceleration/deceleration, mid-corner understeer (less unlock)
+
+=== DAMPERS ===
+
+LS Compression Damping: Low shock shaft speed resistance (driver input movements). Higher = more resistance, faster load transfer
+
+HS Compression Damping: High speed travel (curb strikes, bumps). Higher = stiffer. Lower = absorbs bumps better, may hurt aero platform, risk chassis-track contact
+
+LS Rebound Damping: Low speed extension resistance (body movement from driver inputs). Higher = resists expansion, better aero control, risk of unloading, oscillations. Lower = extends faster. Excessive = unwanted oscillations (wheel bouncing off track instead of contact)
+
+HS Rebound Damping: Extension over bumps/curbs. Higher = slower expansion. Lower = extends easier. Similar effects for aero control and oscillations despite less handling effect from driver inputs
+
+=== BRAKES / IN-CAR / MISC ===
+
+Headlight LED Color: Changes LED strip color around headlights. Identifying specific car when multiple share livery (no performance effect)
+
+Front Master Cylinder: Larger = less front pressure, rearward bias, more effort to lock fronts. Smaller = more front pressure, forward bias, less effort to lock fronts
+
+Rear Master Cylinder: Larger = less rear pressure, forward bias, more effort to lock rears. Smaller = more rear pressure, rearward bias, less effort to lock rears
+
+Brake Pressure Bias: % to front. Above 50% = more front. Below 50% = more rear. Tune for preference and conditions
+
+Traction Control: Amount system cuts torque to prevent wheelspin in heavy throttle/low-grip. Higher = more aggressive cut, less wheelspin. Lower = slightly more wheelspin before intervening. Setting "0" = disabled. (In-car: F8 black box)
+
+Throttle Shape: Torque delivery linearity based on pedal position. Setting 1 = purely linear (25% throttle = 25% torque). Higher settings = more non-linear, butterfly-style (less torque low/high throttle %, more mid-range). Changes initial throttle feel, good for varying driving styles
+
+Cross Weight: % weight on LR and RF relative to total. Adjusted via corner spring preload (Front Torsion Bar Turns, Rear Spring Perch Offset). Should be around 50% for most tracks. Garage tech limits 49.5%-50.5%
+
+Nose Weight: % weight on front axle relative to total. Not directly adjustable (aside from fuel). Can affect handling: Higher = understeer slow corners. Lower = trend towards oversteer
+
+=== SETUP TIPS ===
+
+Framework: Understand if tweak affects aerodynamic or mechanical balance. Try to achieve neutral (no oversteer/understeer) on both
+
+Aerodynamic Balance: Two parts - direct garage settings (wing angles, garage heights) and dynamic settings (heave/third/corner springs affect on-track heights, dampers affect transient motion). All interact to determine overall aero balance through corner types. Aero active even low-speed corners (effect diminished). Settings affecting dynamic heights also affect roll and mechanical balance. Example: softening front corner springs = front sinks lower at speed (increases front-rear height difference = pushes aero forward/oversteer, also lowers total front roll resistance like softening ARB). Third/heave springs affect pitch only - tweak dynamic heights without affecting roll/mechanical balance
+
+Set aero balance first before dialing mechanical balance. Use high-speed corners to tweak aero baseline (aero has large effect vs mechanical)
+
+Mechanical Balance: Roll stiffness options (ARBs, corner springs, dampers in transient) and differential. Monitor total roll stiffness and front/rear balance. Balance between front/rear = felt as shifts between turn-in and on-throttle. Total roll stiffness = overall responsiveness and pliability while turning
+
+Differential: Only adjustment is preload. Easiest to understand - less preload = more oversteer entry, understeer exit. More preload = vice versa
+
+Third/Heave Springs: Allow adjusting pitch (dynamic heights) without affecting roll stiffness. Use with corner springs to set dynamic heights
+
+Provided baseline setups: Heights and springs set to take advantage of aero properties. Encouraged to experiment/optimize but straying far from existing dynamic heights likely generates less downforce
+
+Tire Contact Patch: Camber and toe behave mostly independently. Easy to tweak anytime but difficult to optimize if other balance parts induce undesirable behaviors. Toe adjusts resistance to initial turn-in. Example: more braking stability = add positive rear toe. Camber: trade-off between camber thrust (additional lateral force from angled tire) and contact patch size. More camber = more lateral force, less longitudinal grip (braking/acceleration, smaller contact patch)
+
+Final Note: When unsure if change helps balance, likely another option inducing undesirable behavior covering up current adjustment details. Try experimenting with different setting for more effective balance optimization

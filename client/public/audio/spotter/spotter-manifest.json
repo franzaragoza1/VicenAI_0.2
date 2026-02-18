@@ -1,0 +1,263 @@
+{
+  "generated": "2026-01-21T17:41:24.670Z",
+  "voiceId": "p7AwDmKvTdoHTBuueGvP",
+  "language": "es-AR",
+  "variants": {
+    "car_left": [
+      "car_left_v1.mp3",
+      "car_left_v2.mp3",
+      "car_left_v3.mp3",
+      "car_left_v4.mp3"
+    ],
+    "car_right": [
+      "car_right_v1.mp3",
+      "car_right_v2.mp3",
+      "car_right_v3.mp3",
+      "car_right_v4.mp3"
+    ],
+    "three_wide": [
+      "three_wide_v1.mp3",
+      "three_wide_v2.mp3",
+      "three_wide_v3.mp3",
+      "three_wide_v4.mp3"
+    ],
+    "clear": [
+      "clear_v1.mp3",
+      "clear_v2.mp3",
+      "clear_v3.mp3",
+      "clear_v4.mp3"
+    ],
+    "clear_all_around": [
+      "clear_all_around_v1.mp3",
+      "clear_all_around_v2.mp3",
+      "clear_all_around_v3.mp3"
+    ],
+    "clear_left": [
+      "clear_left_v1.mp3",
+      "clear_left_v2.mp3",
+      "clear_left_v3.mp3"
+    ],
+    "clear_right": [
+      "clear_right_v1.mp3",
+      "clear_right_v2.mp3",
+      "clear_right_v3.mp3"
+    ],
+    "still_left_1": [
+      "still_left_1_v1.mp3"
+    ],
+    "still_left_2": [
+      "still_left_2_v1.mp3"
+    ],
+    "still_left_3": [
+      "still_left_3_v1.mp3"
+    ],
+    "still_right_1": [
+      "still_right_1_v1.mp3"
+    ],
+    "still_right_2": [
+      "still_right_2_v1.mp3"
+    ],
+    "still_right_3": [
+      "still_right_3_v1.mp3"
+    ],
+    "still_three_wide_1": [
+      "still_three_wide_1_v1.mp3"
+    ],
+    "still_three_wide_2": [
+      "still_three_wide_2_v1.mp3"
+    ],
+    "still_three_wide_3": [
+      "still_three_wide_3_v1.mp3"
+    ],
+    "yellow_flag": [
+      "yellow_flag_v1.mp3",
+      "yellow_flag_v2.mp3",
+      "yellow_flag_v3.mp3",
+      "yellow_flag_v4.mp3",
+      "yellow_flag_v5.mp3"
+    ],
+    "blue_flag": [
+      "blue_flag_v1.mp3",
+      "blue_flag_v2.mp3",
+      "blue_flag_v3.mp3",
+      "blue_flag_v4.mp3",
+      "blue_flag_v5.mp3"
+    ],
+    "green_flag": [
+      "green_flag_v1.mp3",
+      "green_flag_v2.mp3",
+      "green_flag_v3.mp3"
+    ],
+    "white_flag": [
+      "white_flag_v1.mp3",
+      "white_flag_v2.mp3",
+      "white_flag_v3.mp3"
+    ],
+    "checkered_flag": [
+      "checkered_flag_v1.mp3",
+      "checkered_flag_v2.mp3",
+      "checkered_flag_v3.mp3"
+    ],
+    "black_flag": [
+      "black_flag_v1.mp3",
+      "black_flag_v2.mp3",
+      "black_flag_v3.mp3",
+      "black_flag_v4.mp3"
+    ],
+    "black_flag_jump_start": [
+      "black_flag_jump_start_v1.mp3",
+      "black_flag_jump_start_v2.mp3",
+      "black_flag_jump_start_v3.mp3",
+      "black_flag_jump_start_v4.mp3"
+    ],
+    "pbox": [
+      "pbox_v1.mp3",
+      "pbox_v2.mp3",
+      "pbox_v3.mp3",
+      "pbox_v4.mp3"
+    ],
+    "pbox_this_lap": [
+      "pbox_this_lap_v1.mp3",
+      "pbox_this_lap_v2.mp3",
+      "pbox_this_lap_v3.mp3"
+    ],
+    "pbox_next_lap": [
+      "pbox_next_lap_v1.mp3",
+      "pbox_next_lap_v2.mp3",
+      "pbox_next_lap_v3.mp3"
+    ],
+    "stay_out": [
+      "stay_out_v1.mp3",
+      "stay_out_v2.mp3",
+      "stay_out_v3.mp3",
+      "stay_out_v4.mp3"
+    ],
+    "pit_entry": [
+      "pit_entry_v1.mp3",
+      "pit_entry_v2.mp3",
+      "pit_entry_v3.mp3"
+    ],
+    "pit_exit": [
+      "pit_exit_v1.mp3",
+      "pit_exit_v2.mp3",
+      "pit_exit_v3.mp3"
+    ],
+    "push": [
+      "push_v1.mp3",
+      "push_v2.mp3",
+      "push_v3.mp3",
+      "push_v4.mp3"
+    ],
+    "push_hard": [
+      "push_hard_v1.mp3",
+      "push_hard_v2.mp3",
+      "push_hard_v3.mp3",
+      "push_hard_v4.mp3"
+    ],
+    "save_fuel": [
+      "save_fuel_v1.mp3",
+      "save_fuel_v2.mp3",
+      "save_fuel_v3.mp3"
+    ],
+    "manage_tires": [
+      "manage_tires_v1.mp3",
+      "manage_tires_v2.mp3",
+      "manage_tires_v3.mp3"
+    ],
+    "fast_lap": [
+      "fast_lap_v1.mp3",
+      "fast_lap_v2.mp3",
+      "fast_lap_v3.mp3",
+      "fast_lap_v4.mp3"
+    ],
+    "damage": [
+      "damage_v1.mp3",
+      "damage_v2.mp3",
+      "damage_v3.mp3"
+    ],
+    "low_fuel": [
+      "low_fuel_v1.mp3",
+      "low_fuel_v2.mp3",
+      "low_fuel_v3.mp3"
+    ],
+    "last_lap_fuel": [
+      "last_lap_fuel_v1.mp3",
+      "last_lap_fuel_v2.mp3",
+      "last_lap_fuel_v3.mp3"
+    ],
+    "fuel_critical": [
+      "fuel_critical_v1.mp3",
+      "fuel_critical_v2.mp3",
+      "fuel_critical_v3.mp3"
+    ],
+    "rain_incoming": [
+      "rain_incoming_v1.mp3",
+      "rain_incoming_v2.mp3",
+      "rain_incoming_v3.mp3"
+    ],
+    "track_drying": [
+      "track_drying_v1.mp3",
+      "track_drying_v2.mp3",
+      "track_drying_v3.mp3"
+    ],
+    "leader": [
+      "leader_v1.mp3",
+      "leader_v2.mp3",
+      "leader_v3.mp3"
+    ],
+    "p2": [
+      "p2_v1.mp3",
+      "p2_v2.mp3",
+      "p2_v3.mp3"
+    ],
+    "p3": [
+      "p3_v1.mp3",
+      "p3_v2.mp3",
+      "p3_v3.mp3"
+    ],
+    "last_place": [
+      "last_place_v1.mp3",
+      "last_place_v2.mp3",
+      "last_place_v3.mp3"
+    ],
+    "faster_than_leader": [
+      "faster_than_leader_v1.mp3",
+      "faster_than_leader_v2.mp3",
+      "faster_than_leader_v3.mp3"
+    ],
+    "losing_time": [
+      "losing_time_v1.mp3",
+      "losing_time_v2.mp3",
+      "losing_time_v3.mp3"
+    ],
+    "good_pace": [
+      "good_pace_v1.mp3",
+      "good_pace_v2.mp3",
+      "good_pace_v3.mp3"
+    ],
+    "nice_work": [
+      "nice_work_v1.mp3",
+      "nice_work_v2.mp3",
+      "nice_work_v3.mp3",
+      "nice_work_v4.mp3"
+    ],
+    "keep_it_up": [
+      "keep_it_up_v1.mp3",
+      "keep_it_up_v2.mp3",
+      "keep_it_up_v3.mp3",
+      "keep_it_up_v4.mp3"
+    ],
+    "focus": [
+      "focus_v1.mp3",
+      "focus_v2.mp3",
+      "focus_v3.mp3",
+      "focus_v4.mp3"
+    ],
+    "copy": [
+      "copy_v1.mp3",
+      "copy_v2.mp3",
+      "copy_v3.mp3",
+      "copy_v4.mp3"
+    ]
+  }
+}

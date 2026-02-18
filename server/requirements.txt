@@ -1,0 +1,30 @@
+# ============================================================================
+# Python Dependencies for VICENTURBO-AI Telemetry Services
+# ============================================================================
+
+# WebSocket communication
+websockets>=12.0
+
+# Process detection for auto-detector
+psutil>=5.9.0
+
+# ============================================================================
+# Simulator Libraries (included locally, no pip install needed)
+# ============================================================================
+
+# iRacing:
+#   - pyirsdk (included in pyirsdk_Reference/)
+
+# Le Mans Ultimate:
+#   - pyLMUSharedMemory (included in lib/pyLMUSharedMemory/)
+#   - Uses native Python mmap, no external dependencies
+
+# ============================================================================
+# Installation Instructions
+# ============================================================================
+
+# Install required packages:
+# pip install websockets psutil
+
+# Or install all at once:
+# pip install -r requirements.txt

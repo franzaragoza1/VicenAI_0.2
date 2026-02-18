@@ -1,0 +1,145 @@
+FIA F4 - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: Inline 4-cylinder
+Chassis: Double wishbone pushrod suspension front and rear
+Dimensions:
+- Length: 4467mm (175.9in)
+- Width: 1738mm (68.4in)
+- Wheelbase: 2745mm (108.1in)
+Weight:
+- Dry: 581kg (1281lbs)
+- Wet with driver: 665kg (1466lbs)
+Engine:
+- Displacement: 2.0L (122.6CID)
+- Torque: 226lb-ft (167Nm)
+- RPM Limit: 7275
+- Power: 178bhp (131kW)
+
+=== OPERATION ===
+
+Starting: Pull upshift paddle to engage gear, apply throttle (no manual clutch)
+Shifting: Automated sequential, clutchless
+Upshift timing: 7000rpm when all shift lights fully illuminated
+Brake Bias: Recommend mapping control for on-track adjustments
+
+=== DASHBOARD ===
+
+Single non-adjustable page
+
+LEFT COLUMN:
+- Oil P: Engine oil pressure (Bar/psi)
+- Oil T: Engine oil temperature (°C/°F)
+- Best Lap: Session best as mm:ss:ms
+
+CENTER:
+- RPM: Engine RPM
+- Gear: Currently selected
+
+RIGHT COLUMN:
+- Wat T: Coolant temperature (°C/°F)
+- Speed: Road speed (km/h/mph)
+- Last Lap: Previous completed lap time
+
+SHIFT LIGHTS:
+- 1 Green: 6300 RPM
+- 2 Green: 6500 RPM
+- 3 Green: 6600 RPM
+- 4 Green: 6700 RPM
+- 1 Red: 6800 RPM
+- 2 Red: 6900 RPM
+- All Flashing: 7000 RPM
+
+PIT LIMITER:
+Large green box at dash base when activated
+
+HALO CENTER PILLAR:
+Can remove rock screen via Options>Graphics>"Hide Obstructions" to "Cockpit halo" or "All". Still visible in replays
+
+=== TIRES ===
+
+Tire Type:
+- Dry: Slick for dry conditions
+- Wet: Treaded for wet surfaces
+
+Cold Pressure: Set on load. Higher = less drag/heat, less grip. Lower = more drag/heat, more grip. Start low and work upward
+
+Hot Pressure: Compare to cold for balance. Heavier-loaded tires show larger difference. Adjust cold so similar tires reach similar hot pressures. Analyze after stabilization (~50% of fuel run)
+
+Tire Temperatures: Carcass temps via Pyrometer. Center temps compare work. Inner/Outer analyze alignment (predominantly camber). Three zones: Inside, Middle, Outer
+
+Tread Remaining: Identifies alignment issues. Use with temps for balance analysis. Same zones as temps
+
+=== AERODYNAMICS ===
+
+Front Mainplane Angle: Powerful for balance and total downforce. Increasing = more cornering capability medium-high speed, significant forward balance (oversteer), slight top speed reduction. Adjust with rear wing and rake. Reducing rake = rearward aero, increasing rake = forward aero
+
+Rear Wing Angle: Primary purpose is trimming balance for front changes. Increasing = more downforce/drag, rearward balance (understeer). Less powerful than front for balance/downforce but more influential for drag. Long straights = may benefit from reduced rear angle for overtaking
+
+Aero Calculator (reference tool - rear wing applies, heights don't):
+- Rear RH at Speed: Input for calculations. Use average of LR/RR from telemetry for accuracy
+- Downforce to Drag: Efficiency (downforce per unit drag). Doesn't represent total downforce
+- Front Downforce: % on front axle. Instantaneous at exact parameters. Check multiple points (braking, steady state, exit) to understand balance movement. Higher forward % = oversteer mid-high speed
+
+Note: Aero active in low-speed corners (effect lessened). Settings affecting dynamic heights also affect roll and mechanical balance
+
+=== CHASSIS - FRONT ===
+
+Pushrod Offset: Adjusts front height via pushrod length. Longer = higher, shorter = lower. Paired adjustment
+
+ARB Blades: 1 (softest) to 5 (stiffest). More blades = stiffer, less roll, understeer, more responsive feel. Fewer = softer, more roll, less understeer, more grip. Consider aero: softer = more roll, less aero platform control high-speed
+
+Damper Compression Stiffness: Paired low/high speed. 1 = min damping (least resistance), 10 = max (most resistance). Increasing = faster weight transfer, more turn-in response, less overall grip. High speed increases proportionally = harsher kerb response. Smooth tracks = more bump stiffness beneficial. Rough/aggressive kerbs = less compression for mechanical grip
+
+Damper Rebound Stiffness: Paired low/high speed. 1 = min (least extension resistance), 10 = max (most). Increasing = slower extension. High = better platform control and response but risk tire losing contact causing oscillations
+
+Brake Pressure Bias: % to front. Above 50% = more front pressure, forward shift, front lock tendency, more stability. Tune for preference and conditions
+
+=== CHASSIS - FRONT CORNERS ===
+
+Cross Weight: % of weight over RF and LR. 50.0% = optimal non-ovals, symmetrical handling. Higher = understeer left turns, oversteer right. Changed via corner springs, air pressures, alignment
+
+Corner Weight: Static weight per tire. Critical for optimization. Not easily influenced (individual corner pushrods non-adjustable). Asymmetric setups may show differences
+
+Ride Height: Reference from ground to chassis point. May not reflect actual clearance. Low = better aero/mechanical. Increasing front = less front/overall downforce, more weight transfer. Decreasing = more front/overall downforce, less transfer. Minimum legal: 20.0mm
+
+Spring Rate: Six options 88-175 N/mm (500-1000 lbs/in). Stiffer = smaller height variance, better aero platform, increased tire load variation, less mechanical grip. Drawbacks worse on rough tracks. Changes affect roll and pitch - consider ARB changes to retain roll stiffness. Reducing spring = increase ARB for same roll stiffness. Adjust pushrod offsets after spring changes
+
+Caster: Vertical angle of steering axis (side view). Positive = leaned rearward. More caster = larger trail, heavier steering feel, possible feedback loss, more dynamic camber at large angles (good for chicanes/hairpins), more jacking effect (lifts inside front, lowers outside front, unloads/lifts inside rear for rotation)
+
+Camber: Negative recommended. Higher negative = more cornering force, less braking grip, reduced tire life. Balance life vs performance. Increasing front = more mid-high speed grip, less braking, needs rearward brake bias shift
+
+Toe-In: Negative (toe-out) = more turn-in, less stability. Positive (toe-in) = more stability, sluggish response
+
+=== CHASSIS - REAR CORNERS ===
+
+Spring Rate: Six options 88-175 N/mm (500-1000 lbs/in). Stiffer = smaller height variance, better aero, less mechanical grip (especially slow corner exits, aggressive throttle, rough tracks). Match to track needs. Balance high/low speed handling. Example: high-speed understeer + low-speed oversteer = increase rear spring (allows lower static rear height for less slow-speed transfer, maintains/increases high-speed rear height for forward aero shift). Adjust pushrod offsets after changes
+
+Camber: Negative recommended. Slightly less than front (rear wider, must drive forward). Higher negative = more lateral grip, less longitudinal traction
+
+Toe-In: Typical to run toe-in. Increasing = better stability, less direction change response. Avoid large values (increases drag, reduces speed). Keep equal L/R to prevent crabbing/asymmetric handling. Heavily asymmetric tracks (e.g., Lime Rock Park) may benefit from asymmetric toe and other parameters
+
+=== CHASSIS - REAR ===
+
+Rear Ride Height: Reference from ground to rear chassis centerline. Increasing = less rear downforce %, more overall downforce, more weight transfer. Decreasing = more rear downforce %, less overall downforce, less transfer. Critical for mechanical and aero balance. Match static height to chosen springs. Minimum legal: 30.0mm, Maximum legal: 40.0mm
+
+Pushrod Offset: Adjusts rear height via pushrod length. Longer = higher, shorter = lower. Paired adjustment
+
+ARB Blades: 1 (softest) to 5 (stiffest). Increasing stiffness = stiffer, less roll, oversteer, quicker "set" at turn-in. Decreasing = softer, more roll, less oversteer, less-responsive rear transients, more grip
+
+Damper Compression Stiffness: Paired low/high speed. Identical ranges to front. Increasing = faster weight transfer, more response, less overall grip (especially exit traction). Excessively stiff = poor traction rough tracks (large tire load variation)
+
+Damper Rebound Stiffness: Paired low/high speed. Identical ranges to front. Increasing = slower extension. High = better platform/response but risk losing contact. Detrimental during braking/initial turn-in. Increase can slow pitch change on brake application, potentially increasing braking stability
+
+Fuel Level: Tank capacity 40L (10.6g). Adjustable in 1L (0.26g) increments
+
+=== SETUP APPROACH ===
+
+Aerodynamic Balance: Two parts - direct garage options (wings, static heights) and dynamic options (springs/torsion bars affect at-speed heights, dampers affect transient motion). All interact to determine balance through corner types
+
+Mechanical Balance: Roll stiffness options (ARBs, springs, dampers in transient) and differential. Monitor total roll stiffness and front/rear balance. Third/heave springs affect pitch only without affecting roll/mechanical balance
+
+Tire Contact Patch: Camber and toe behave independently. Easy to tweak anytime but difficult to optimize if other settings induce undesirable behaviors
+
+When Uncertain: If unsure if change helps, experiment with different setting. Likely another option inducing undesirable behavior covering up current adjustment details

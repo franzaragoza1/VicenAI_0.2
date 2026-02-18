@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   VICEN Racing Engineer - Global Styles
+   ============================================================================ */
+
+:root {
+  /* Background colors */
+  --bg-primary: #0A0A0F;
+  --bg-surface: #14141F;
+  --bg-elevated: #1E1E2E;
+  
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #A0A0B0;
+  --text-muted: #606070;
+  
+  /* Accent colors - Functional, not decorative */
+  --accent-cyan: #00D9FF;
+  --accent-green: #00FF88;
+  --accent-amber: #FFB800;
+  --accent-red: #FF3B3B;
+  --accent-violet: #8B5CF6;
+  
+  /* Gemini state colors */
+  --gemini-disconnected: #3A3A4A;
+  --gemini-idle: #00D9FF;
+  --gemini-listening: #00D9FF;
+  --gemini-thinking: #8B5CF6;
+  --gemini-speaking: #00FF88;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mono font for numbers - prevents layout shift */
+.font-mono-numbers {
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================================================
+   Utility Classes
+   ============================================================================ */
+
+.glass-surface {
+  background: rgba(20, 20, 31, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, var(--accent-cyan), #00A3CC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================================================
+   Animations
+   ============================================================================ */
+
+/* Breathing animation for idle state */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+/* Pulse for alerts */
+@keyframes pulse-alert {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Flash for value changes */
+@keyframes flash-value {
+  0% {
+    color: var(--accent-cyan);
+  }
+  100% {
+    color: inherit;
+  }
+}
+
+.animate-breathe {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+.animate-pulse-alert {
+  animation: pulse-alert 1s ease-in-out infinite;
+}
+
+.animate-flash {
+  animation: flash-value 0.3s ease-out;
+}
+
+/* ============================================================================
+   Overlay-specific styles (transparent window)
+   ============================================================================ */
+
+.overlay-mode {
+  background: transparent !important;
+}
+
+.overlay-mode body {
+  background: transparent !important;
+}
+
+/* Draggable region for Electron */
+.drag-region {
+  -webkit-app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* ============================================================================
+   Scrollbar (hidden by default, subtle when needed)
+   ============================================================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}

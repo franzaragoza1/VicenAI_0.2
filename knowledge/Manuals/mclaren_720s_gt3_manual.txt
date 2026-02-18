@@ -1,0 +1,63 @@
+MCLAREN 720S GT3 - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: M840T 4.0L V8 Twin-Turbo
+Chassis: Carbon fibre MonoCage II
+Dimensions:
+- Length: 4664mm (183.6in)
+- Width: 2040mm (80.3in)
+- Wheelbase: 2696mm (106.1in)
+Weight:
+- Dry: 1285kg (2833lbs)
+- Wet with driver: 1420kg (3130lbs)
+Engine:
+- Displacement: 4.0L (244CID)
+- Torque: 492lb-ft (668Nm)
+- RPM Limit: 8000
+- Power: 520bhp (388kW) (BoP dependent)
+
+=== OPERATION ===
+
+Starting: Ignition Switch, Start Button
+Shifting: 6-speed sequential paddle shift. No clutch needed for up/down shifts
+Pit Limiter: Push button activation. Dash background changes color
+Dash Page: Toggle usually on wheel (Page button)
+
+=== DASHBOARD DISPLAYS ===
+
+RACE PAGE:
+- Shift Lights: Green > Red > Blue (Shift point)
+- Key Data: Speed, Gear, Lap Time, Delta
+- Systems: ABS, TC, Map positions
+- Tire Data: Live pressures and temperatures
+
+QUAL PAGE:
+- Removes fuel consumption metrics
+- Emphasizes predictive lap time and sector deltas
+
+PIT LIMITER SCREEN:
+- Color Coded: Green = At Limit, Red = Over Limit, Blue/Black = Under Limit
+
+=== CHASSIS & AERO ===
+
+Aero Setup:
+- Rear Wing: 12 positions (Angle adjustments). Higher angle = More drag/downforce
+- Ride Height: Front splitter sensitivity. Rake tuning essential for balance
+
+Suspension:
+- 4-way adjustable dampers (Bump/Rebound High/Low speed)
+- ARB: Adjustable front and rear stiffness
+- Toe/Camber: Standard alignment adjustments for contact patch optimization
+
+=== DRIVETRAIN & BRAKES ===
+
+Differential:
+- Plate type LSD
+- Preload: Adjustable (Nm). Controls locking onset
+- Drive/Coast Ramps: Influence locking on throttle vs braking
+
+ABS/TC:
+- ABS: 12 positions. Tailor to grip/weather
+- TC: 12 positions. Controls wheel slip allowance
+- Throttle Maps: Linear, Butterfly, S-Shape options for pedal feel

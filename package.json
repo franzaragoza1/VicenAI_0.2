@@ -1,0 +1,96 @@
+{
+  "name": "vicen-racing-engineer",
+  "private": true,
+  "version": "3.0.0",
+  "type": "module",
+  "main": "electron-main.cjs",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run server:dev\" \"npm run client:dev\"",
+    "dev:iracing": "concurrently -n \"PYTHON,SERVER,CLIENT\" -c \"bgYellow.bold,bgBlue.bold,bgGreen.bold\" \"npm run telemetry:iracing\" \"npm run server:dev\" \"npm run client:dev\"",
+    "dev:lmu": "concurrently -n \"PYTHON,SERVER,CLIENT\" -c \"bgYellow.bold,bgBlue.bold,bgGreen.bold\" \"npm run telemetry:lmu\" \"npm run server:dev\" \"npm run client:dev\"",
+    "dev:auto": "concurrently -n \"PYTHON,SERVER,CLIENT\" -c \"bgYellow.bold,bgBlue.bold,bgGreen.bold\" \"npm run telemetry:auto\" \"npm run server:dev\" \"npm run client:dev\"",
+    "dev:iracing:rag": "cmd /c \"set VERTEX_ENABLE_RAG=1&& npm run dev:iracing\"",
+    "dev:iracing:norag": "cmd /c \"set VERTEX_ENABLE_RAG=0&& npm run dev:iracing\"",
+    "dev:lmu:rag": "cmd /c \"set VERTEX_ENABLE_RAG=1&& npm run dev:lmu\"",
+    "dev:lmu:norag": "cmd /c \"set VERTEX_ENABLE_RAG=0&& npm run dev:lmu\"",
+    "dev:auto:rag": "cmd /c \"set VERTEX_ENABLE_RAG=1&& npm run dev:auto\"",
+    "dev:auto:norag": "cmd /c \"set VERTEX_ENABLE_RAG=0&& npm run dev:auto\"",
+    "start:base": "concurrently -n \"PYTHON,SERVER,CLIENT,ELECTRON\" -c \"bgYellow.bold,bgBlue.bold,bgGreen.bold,bgMagenta.bold\" \"npm run telemetry:auto\" \"npm run server:dev\" \"npm run client:dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "start": "npm run start:base",
+    "start:rag": "set VERTEX_ENABLE_RAG=1&& npm run start:base",
+    "start:norag": "set VERTEX_ENABLE_RAG=0&& npm run start:base",
+    "telemetry:start": "py -3.12 server/telemetry_service.py",
+    "telemetry:iracing": "py -3.12 server/telemetry_service.py",
+    "telemetry:lmu": "py -3.12 server/lmu_service.py",
+    "telemetry:auto": "py -3.12 server/telemetry_auto_detector.py",
+    "telemetry:only": "py -3.12 server/telemetry_service.py",
+    "build": "npm run client:build && npm run server:build",
+    "client:dev": "vite",
+    "client:build": "vite build",
+    "client:preview": "vite preview",
+    "server:dev": "nodemon",
+    "server:build": "tsc -p server/tsconfig.json",
+    "server:start": "node server/dist/index.js",
+    "electron:dev": "concurrently -n \"SERVER,CLIENT,ELECTRON\" -c \"bgBlue.bold,bgGreen.bold,bgMagenta.bold\" \"npm run server:dev\" \"npm run client:dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@google/genai": "^1.15.0",
+    "@types/fluent-ffmpeg": "^2.1.28",
+    "express": "^5.2.1",
+    "fluent-ffmpeg": "^2.1.3",
+    "framer-motion": "^11.11.11",
+    "lucide-react": "^0.469.0",
+    "node-hid": "^3.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "uiohook-napi": "^1.5.4",
+    "uuid": "^13.0.0",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.14.0",
+    "@types/node-hid": "^1.3.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@types/uuid": "^11.0.0",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.2.1",
+    "electron": "^40.0.0",
+    "electron-builder": "^26.4.0",
+    "nodemon": "^3.1.11",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "wait-on": "^9.0.3"
+  },
+  "build": {
+    "appId": "com.vicenturbo.ingeniero",
+    "productName": "VICEN Racing Engineer",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "electron-main.cjs",
+      "package.json",
+      "client/dist/**/*",
+      "server/dist/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "client/public/favicon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

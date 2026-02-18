@@ -1,0 +1,65 @@
+ACURA ARX-06 GTP - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: Acura AR24e 2.4L V6 Twin-Turbo + Hybrid
+Chassis: ORECA Carbon fibre monocoque
+Dimensions:
+- Length: 5100mm (200.8in)
+- Width: 2000mm (78.7in)
+- Wheelbase: 3148mm (124in)
+Weight:
+- Dry: 1030kg (2271lbs)
+- Wet with driver: 1146kg (2527lbs)
+Engine:
+- Displacement: 2.4L (146.5CID)
+- Torque: 396lb-ft (537Nm)
+- RPM Limit: 9500
+- Power: 671bhp (500kW) combined
+
+=== OPERATION ===
+
+Starting: Ignition ON, Hold Starter
+Shifting: Sequential paddle shift. Electronic throttle cut/blip
+Pit Limiter: Toggle button. Dash LEDs flash/change color when active
+Hybrid: Automatic deployment based on selected mode
+
+=== DASHBOARD DISPLAYS ===
+
+RACE PAGE:
+- Central Gear Indication
+- Hybrid: SoC Bar (Yellow/Blue target), Deploy Mode, Regen Level
+- Engine: Water Temp, Oil Temp, Oil Press
+- Driver Aids: TC1 (Slip), TC2 (Yaw/Gain), ABS, Brake Bias
+
+QUAL PAGE:
+- Highlights Lap Delta and Split times
+- Removes fuel economy targets/Virtual Tank info
+
+=== CHASSIS & AERO ===
+
+Heave Springs (Third Elements):
+- Control pitch sensitivity and ride height at high speed
+- Stiffer heave = more stable aero platform, harsh over bumps
+
+Anti-Roll Bars:
+- Adjustable blade stiffness front/rear
+- Tuning for corner entry/exit balance (Understeer/Oversteer)
+
+Aero Map:
+- Sensitive to rake angle (Rear RH - Front RH)
+- Lower RH = More downforce (up to stall point)
+
+=== ELECTRONIC SYSTEMS ===
+
+Traction Control (TC):
+- TC1: Longitudinal slip target (Wheelspin)
+- TC2: Lateral cut/Gain (Slide angle)
+
+Brake Bias:
+- Adjusts hydraulic pressure distribution Front/Rear
+- Migration: Shifts bias dynamically during braking phase
+
+MGU-K:
+- Modes: Qual, Race (Balanced), Attack, Build
+- Regen: Passive on throttle lift and active on brake application

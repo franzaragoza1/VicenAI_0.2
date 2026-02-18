@@ -1,0 +1,63 @@
+GLOBAL MAZDA MX-5 CUP - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: SkyActiv-G 2.0L 4-Cylinder
+Chassis: Unibody with roll cage
+Dimensions:
+- Length: 3911mm (154.0in)
+- Width: 1727mm (68.0in)
+- Wheelbase: 2308mm (90.9in)
+Weight:
+- Wet with driver: 1008kg (2222lbs)
+Engine:
+- Displacement: 2.0L (122CID)
+- Torque: 151lb-ft (205Nm)
+- RPM Limit: 7500
+- Power: 180bhp (135kW)
+
+=== OPERATION ===
+
+Starting: Ignition Toggle, Start Button
+Shifting: 6-Speed Sequential (SADEV). No clutch required for up/down shifts once moving.
+Launch: Use clutch to start moving.
+Pit Limiter: Manual activation required.
+
+=== DASHBOARD DISPLAYS ===
+
+MAIN PAGE:
+- Display: AiM MXG 1.2
+- Top Bar: RPM LEDs (Green > Red > Blue shift lights)
+- Left Side: Oil Temp, Oil Press, Water Temp
+- Center: Gear Indicator (Large), Speed (Below Gear)
+- Right Side: Lap Time, Fuel Pressure, Voltage
+- Bottom: Odometer
+
+=== CHASSIS SETUP ===
+
+Suspension:
+- Double Wishbone (Front), Multi-Link (Rear)
+- Dampers: Single adjustable DSSV (Dynamic Suspensions Spool Valve)
+
+Ride Height:
+- Adjusted via spring perch offset
+- Corner Weight balancing is critical for handling
+
+Anti-Roll Bars (ARB):
+- Front: Adjustable blade stiffness
+- Rear: Adjustable blade stiffness
+- Disconnecting bars (asymmetric) is not typical for this car
+
+Alignment:
+- Camber: Negative camber beneficial for cornering grip
+- Toe: Adjustable front and rear to tune turn-in and stability
+
+=== DRIVETRAIN ===
+
+Differential:
+- Type: Limited Slip Differential
+- Tuning: Fixed unit, no user-adjustable ramp angles or preload in this spec series
+
+Brakes:
+- Bias: Adjustable front/rear via knob in cockpit
+- ABS: Not available on this car. Threshold braking required

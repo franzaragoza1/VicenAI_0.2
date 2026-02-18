@@ -1,0 +1,176 @@
+SUPER FORMULA SF23 - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: Turbocharged inline 4-cylinder
+Chassis: Double wishbone with pushrod-actuated inboard springs
+Dimensions:
+- Length: 5233mm (206in)
+- Width: 1910mm (75in)
+- Wheelbase: 3115mm (123in)
+Weight:
+- Dry: 600kg (1322lbs)
+- Wet with driver: 670kg (1477lbs)
+Engine:
+- Displacement: 2.0L (122.6CID)
+- Torque: 354lb-ft (480Nm)
+- RPM Limit: 9400
+- Power: 550bhp (408kW)
+
+=== OPERATION ===
+
+Starting: Pull upshift paddle to engage gear, apply throttle (no manual clutch)
+Shifting: Automated sequential, clutchless. Downshift protection prevents over-rev
+Upshift timing: Around 9300rpm when all shift lights fully illuminated
+Brake Bias: Recommend mapping control for on-track adjustments
+
+=== DASHBOARD DISPLAYS ===
+
+Four pages: Engine, Overtake, TMS, Tire Temps
+
+ENGINE PAGE:
+- LAP: Laps completed (shows one less than current)
+- TIME: Previous lap time
+- REF: Best lap of session
+- DIFF: Cumulative splits to best lap
+- Gear: Center green box
+- SPEED: Current speed (mph/kph)
+- FUEL: Fuel burned since pits (gal/L)
+- CAL POT POSITION: Various settings in numerical form (only Orange = Throttle Shaping is adjustable in sim)
+- ECT: Coolant temp (°F/°C)
+- EOP: Oil pressure (psi/bar)
+
+OVERTAKE PAGE:
+Same as Engine page except:
+- OT Left: Time available before system disabled for session (seconds)
+- ReTime: Time until Overtake can be re-enabled
+
+TMS PAGE:
+Tire pressure info replacing lap times:
+- TMS FL/FR/RL/RR: Current tire pressure (psi/Bar)
+
+TIRE TEMPS PAGE:
+Internal air temperature of all four tires (°F/°C) - not tread/surface temp
+
+LEFT-SIDE LED CLUSTER:
+Brake Temperature Indicators:
+- Single green LED bottom: Far below optimum, may be inconsistent
+- Single green LED top: Close to operating temp, slightly cool
+- [Other brake temp states not detailed in manual]
+
+=== OVERTAKE SYSTEM ===
+
+On-demand power boost: ~5% increase via increased fuel flow limit
+
+Availability:
+- Test/Practice: Unlimited use, no time limit
+- Qualifying: Disabled
+- Race: 200 seconds total, 100-110 second delay between uses (track dependent)
+
+Operation:
+- Active: Green overlay, countdown timer, bar showing remaining time, left LEDs flash green
+- Resetting: Blue/red bar left side, left LEDs flash purple, ReTime counts from 100
+- Available: Left LEDs blue
+- Under 20s remaining: Red overlay, red LEDs instead of green
+- Depleted: OT Left and ReTime show "0"
+
+Full Course Caution: System deactivates if active, ReTime resets to 100, unavailable during caution, immediately available at green flag
+
+=== TIRES ===
+
+Cold Pressure: Set on load. Higher = less drag/heat, less grip. Lower = more drag/heat, more grip
+
+Last Hot Pressure: Compare cold vs hot for balance analysis. Heavier-loaded tires show larger difference. Adjust cold so similar tires reach similar hot pressures
+
+Last Temps: Carcass temps within tread. Center temps compare work. Inner/Outer analyze alignment and pressure
+
+Tread Remaining: Identifies alignment issues. Never prioritize over temps for balance
+
+=== AERODYNAMICS ===
+
+Front Flap Angle: Higher = more front downforce, forward aero, more drag. Lower = less downforce, rearward aero, less drag
+
+Rear Wing Angle: Higher = more downforce/drag, rearward aero. Lower = less downforce/drag, forward aero
+
+Rear Gurney Flap: Wicker on trailing edge. Two sizes available. Larger = more downforce/drag than smaller
+
+Aero Calculator (reference tool - rear wing changes apply to car, heights don't):
+- Rear RH at Speed: Input from telemetry for calculations
+- Front Downforce: % on front axle. Monitor during setup to prevent unexpected changes
+- Downforce to Drag: Efficiency ratio. Higher = efficient, lower = slippery
+
+=== CHASSIS - FRONT ===
+
+ARB Diameter: 15mm (5/8"), 18mm (11/16"), or 30mm (1 3/16") with 3mm hollow bore. Larger = stiffer, less grip, understeer, flatter. Smaller = softer, more grip, less understeer, more roll
+
+ARB Position: Higher number = stiffer, understeer. Lower = softer, less understeer
+
+Heave Spring Rate: Vertical travel control. Stiffer = less travel, consistent aero, less mechanical grip. Softer = more mechanical grip, excessive movement
+
+Heave Spring Gap: Compression needed before spring loads. Positive = unloaded static, needs compression. Negative = preloaded. Lower = engages sooner, higher = delayed engagement. Changes with other settings affecting ride height
+
+Brake Pressure Bias: % to front. Higher = more front, understeer, risks front lock. Lower = more rear, oversteer, risks rear lock. Set to avoid lockups
+
+Display Page: Default startup (no performance effect)
+
+=== CHASSIS - FRONT CORNERS ===
+
+Corner Weight: Static weight on wheel. For visualizing distribution
+
+Ride Height: Reference from ground to chassis centerline. Not actual ground clearance. Low = good aero/mechanical but avoid track contact. Affects balance, downforce, drag
+
+Pushrod Length: Turnbuckle adjuster for height. Longer = raise front, shorter = lower. Adjusted symmetrically
+
+Torsion Bar: Outer diameter changes stiffness. Stiffer = less movement, less mechanical grip, understeer. Softer = more movement, more grip, less/more understeer. Larger = stiffer, smaller = softer
+
+Bump Stiffness: Low shock piston speed compression resistance. Higher = more resistance, understeer under braking. Lower = more compliant, less understeer. Higher slows vertical movement for stable aero
+
+Rebound Stiffness: Low speed extension resistance. Higher = better aero control, on-throttle understeer, risk of unloading. Lower = maintain grip, less understeer
+
+Camber: Negative recommended. Higher negative = more cornering force in camber direction, more aggressive turn-in, less braking
+
+Toe-In: Negative (toe-out) = more turn-in, less stability. Positive (toe-in) = more stability, sluggish response
+
+=== CHASSIS - REAR CORNERS ===
+
+Corner Weight: Static weight. For visualizing distribution
+
+Ride Height: Reference from ground to chassis centerline. Not actual clearance. Affects balance, downforce, drag
+
+Pushrod Length: Turnbuckle adjuster. Longer = raise rear, shorter = lower. Symmetrical
+
+Spring Rate: Force per displacement. Stiffer = less movement, better aero, less mechanical grip, oversteer slow corners. Softer = more movement, more grip, less/more oversteer
+
+Bump Stiffness: Low speed compression. Higher = more resistance, understeer on throttle. Lower = less understeer. Higher slows vertical movement for stable aero
+
+Rebound Stiffness: Low speed extension. Higher = better aero, understeer under braking, risk unloading. Lower = oversteer under braking
+
+Camber: Negative recommended. Higher negative = more cornering force (stability high-speed), less on-throttle traction
+
+Toe-In: Negative = front farther from center. Positive = front closer. Toe-in = more stability, less rotation. Lower toe-in (toward toe-out) = quicker response, unstable feel
+
+=== CHASSIS - REAR ===
+
+Fuel Level: Amount in tank at load
+
+ARB Diameter: 15mm (5/8") or 17mm (11/16"). Larger = stiffer, less roll, oversteer, flatter. Smaller = softer, more roll, less oversteer, more grip
+
+3rd Spring Rate: Heave only. Prevents dropping under heavy aero loads or vertical forces. Allows softer corner springs for mechanical grip. Stiffer = less vertical travel, consistent aero, less mechanical grip at low speeds. Softer = more travel
+
+3rd Spring Gap: Compression needed before loading. Positive = unloaded static. Negative = preloaded. Lower = engages sooner, higher = delayed. Changes with other settings
+
+=== DIFFERENTIAL ===
+
+Clutch Plates: Multiplies locking force by number of plates. More = understeer off-throttle, oversteer on-throttle. Fewer = oversteer off-throttle, understeer on-throttle
+
+Preload: Static locking always present. More = understeer braking, oversteer throttle. Less = oversteer braking, understeer throttle
+
+Drive Angle: Locking force during acceleration. Higher = less force, oversteer on initial throttle. Lower = more force, understeer
+
+Coast Angle: Locking force during deceleration. Higher = less force, oversteer under braking. Lower = more force, understeer
+
+=== ENGINE IN-CAR DIALS ===
+
+Throttle Shaping (TPS): Controls torque delivery through pedal travel. Low = butterfly-style (less at low throttle, high increase mid-range, slower at high). High = linear (consistent increase). Adjustable in-car
+
+Launch Control RPM (Start Limit): Max RPM at full throttle when stationary with LC armed. Reduces wheelspin on low-grip starts. LC button mappings in Options>Control under Traction Control

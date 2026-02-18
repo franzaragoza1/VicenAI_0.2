@@ -1,0 +1,60 @@
+LAMBORGHINI HURACÁN GT3 EVO - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: 5.2L V10 Naturally Aspirated
+Chassis: Aluminum/Carbon hybrid chassis
+Dimensions:
+- Length: 4550mm (179in)
+- Width: 2050mm (80.7in)
+- Wheelbase: 2620mm (103in)
+Weight:
+- Wet with driver: 1260kg (2778lbs)
+Engine:
+- Displacement: 5.2L (317CID)
+- Torque: 375lb-ft (510Nm)
+- RPM Limit: 8500
+- Power: 500bhp (373kW) (BoP restricted)
+
+=== OPERATION ===
+
+Starting: Main Switch, Ignition, Start
+Shifting: 6-Speed Sequential. Paddle shift. No clutch needed for gear changes.
+Pit Limiter: Button on steering wheel. Dash indicates activation.
+Dash Page: Rotatable switch or button to cycle pages
+
+=== DASHBOARD DISPLAYS ===
+
+RACE 1 & 2:
+- Same data, different color schemes (Day/Night)
+- Key Data: Speed, Gear, Lap Time, Fuel, Oil/Water Temps
+- Alerts: Low fuel, high temp warnings overlay
+
+QUAL 1 & 2:
+- Focus on Lap Delta and Predictives
+- Hides fuel economy metrics
+
+=== CHASSIS & AERO ===
+
+Aero Setup:
+- Rear Wing: Adjustable angle. Main contributor to rear downforce
+- Ride Height: Front height affects splitter efficiency significantly
+- Rake: Higher rear relative to front increases oversteer and drag
+
+Suspension:
+- Springs: Corner springs stiffness controls mechanical grip
+- ARB: Adjustable front/rear. Soft Front ARB = more turn-in grip
+- Dampers: Compression/Rebound adjustable
+
+=== ELECTRONICS & DRIVETRAIN ===
+
+ABS/TC:
+- ABS: 12 Position rotary. 1 = Min intervention.
+- TC: 12 Position rotary. Controls wheel spin intervention
+
+Differential:
+- Preload (Nm): Adjustable. Affects locking on coast/transition
+- Plate differential
+
+Brake Bias:
+- Adjustable via knob. Shifts pressure Front/Rear

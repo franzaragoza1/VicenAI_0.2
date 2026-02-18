@@ -1,0 +1,227 @@
+SUPER FORMULA LIGHTS - TECHNICAL MANUAL
+
+=== VEHICLE SPECIFICATIONS ===
+
+Power Unit: Turbocharged 3-cylinder Toyota TGE33
+Chassis: Double wishbone with pushrod-actuated inboard springs
+Dimensions:
+- Length: 4934mm (194in)
+- Width: 1875mm (74in)
+- Wheelbase: 2866mm (113in)
+Weight:
+- Dry: 587kg (1250lbs)
+- Wet with driver: 690kg (1520lbs)
+Engine:
+- Displacement: 1.6L (97.6CID)
+- Torque: 230lb-ft (311Nm)
+- RPM Limits: 7100 soft / 7300 hard
+- Power: 276bhp (206kW)
+
+=== OPERATION ===
+
+Starting: Pull upshift paddle to engage gear, apply throttle (no manual clutch needed)
+Shifting: Sequential transmission, clutchless. Downshift protection prevents over-rev
+Upshift timing: Around 7000rpm when all shift lights fully illuminated
+Brake Bias: Recommend mapping control for on-track adjustments
+
+=== DASHBOARD DISPLAYS ===
+
+RACE PAGE:
+- Laptime: Current lap time (top)
+- Last Lap: Previous completed lap
+- Lap #: Laps completed
+- Gear: Center display
+- RPM: Engine RPM
+- Water Temp: Coolant temperature (°C or °F)
+
+DIAGNOSTIC PAGE:
+Left Column:
+- RPM: Engine RPM
+- Oil P: Oil pressure (PSI/Bar)
+- Rail P: Fuel system pressure (PSI/Bar)
+- Throttle: Pedal position (%)
+- Batt: Current RPM [appears to be error in manual]
+- Gear: Coolant temp [appears to be error in manual]
+
+Center Column:
+- Air T: Ambient temperature (°C/°F)
+- Water T: Coolant temperature (°C/°F)
+- Oil T: Oil temperature (°C/°F)
+- Fuel T: Fuel temperature (°C/°F)
+- Lambda: Air/fuel mixture ratio
+
+Right Column:
+- Diff Time: Current lap vs best lap delta
+- Current Lap: Current lap time
+- Last Lap: Previous lap time
+
+=== TIRES ===
+
+Tire Type:
+- Dry: Slick for dry conditions
+- Wet: Treaded for wet surfaces
+
+Cold Pressure: Set on load. Higher = less drag/heat, less grip. Lower = more drag/heat, more grip. Start low and increase as needed
+
+Last Hot Pressure: Compare cold vs hot to analyze balance. Heavier-loaded tires show larger cold-hot difference. Adjust cold pressures so similar tires reach similar hot pressures
+
+Last Temperatures: Carcass temps within tread. Center temps compare tire work. Inner/Outer analyze alignment and pressure
+
+Tread Remaining: Identifies alignment issues. Never prioritize over temps for balance analysis
+
+=== AERODYNAMICS ===
+
+Aero Package:
+- High DF: Most downforce, most drag
+- Medium DF: Balanced, allows either flap config
+- Low DF: Least downforce, least drag
+Note: Changing package may change wing limits - monitor Aero Balance
+
+Front Flap Configuration:
+- High DF: More downforce/drag (required with High DF package)
+- Low DF: Less downforce/drag (required with Low DF package)
+- Medium DF package: Either flap allowed
+
+Front Flap Angle: Higher = more downforce, forward aero, more drag. Lower = less downforce, rearward aero, less drag
+
+Front Flap Gurney Flap: 5mm or 10mm wicker or remove. Installed = significant downforce/drag increase, forward balance. Removed = large drag reduction, rearward balance
+
+Rear Upper Flap Angle: Higher = more downforce/drag, rearward aero. Lower = less downforce/drag, forward aero
+
+Rear Beam Wing Angle: Lower element above axle. Higher = more downforce, rearward aero. Lower = forward aero, less downforce
+
+Aero Calculator (reference tool only - doesn't affect setup):
+- Front/Rear RH at Speed: Input on-track heights from telemetry
+- Aero Balance: % downforce on front. Monitor to prevent unexpected changes
+- Drag Trim: Drag offset from base (higher = more drag)
+- Downforce Trim: Downforce offset from base (higher = more downforce)
+- Balance Trim: Center of pressure shift (higher = forward, lower = rearward)
+- Downforce to Drag: Efficiency ratio
+
+=== CHASSIS - FRONT ===
+
+Heave Spring: Controls vertical travel. Stiffer = less travel, consistent aero, less mechanical grip over bumps. Softer = more mechanical grip, excessive movement
+
+Heave Perch Offset: Preloads heave spring. Decreasing = preload spring, raise ride height. Increasing = unload spring, lower ride height
+
+Heave Spring Deflection: Compression from free length. Not directly adjustable. Higher = more preload, lower = relaxed
+
+Heave Damper Deflection: Travel available before bottoming. Shows position, not loading
+
+Pushrod Length Offset: Changes ride height without affecting preload. Set springs first, then adjust height. Longer = higher, shorter = lower
+
+ARB Size: Anti-roll stiffness. Stiffer = more roll stiffness, understeer. Softer/disconnected = less stiffness, less understeer, may hurt aero
+
+ARB Arm Length: Longer = softer ARB, oversteer. Shorter = stiffer ARB, understeer
+
+ARB Blades: #1 softest to #5 stiffest. Stiffer = understeer, softer = less understeer. (In-car: FARB)
+
+=== CHASSIS - FRONT CORNERS ===
+
+Ride Height: Reference from ground to chassis. Lower = better for aero/mechanical but avoid track contact. Affects aero balance, downforce, drag
+
+Spring Deflection: Compression from free length under static load. Shows preload
+
+Shock Deflection: Compression from free length. Shows available travel before springs/packers engage
+
+Torsion Bar Preload: Adjusts height and corner weight. Decreasing = more preload, more weight, higher height. Adjust in pairs to prevent crossweight changes
+
+Torsion Bar Outer Diameter: Changes stiffness. Stiffer (larger) = less front movement, less mechanical grip, understeer. Softer (smaller) = more movement, more grip, less understeer
+
+Compression Damping: Low-speed resistance. Higher = faster weight transfer, understeer. Lower = slower transfer, less understeer
+
+Rebound Damping: Low-speed extension resistance. Higher = better aero control, on-throttle understeer, risk of wheel unloading. Lower = maintain grip longer, less understeer, more splitter lift. Excessive causes oscillations
+
+Camber: Negative recommended. Higher negative = more cornering force, less braking. Asymmetric for directional tracks
+
+Toe-In: Negative (toe-out) = more turn-in, less stability. Positive (toe-in) = more stability, sluggish response
+
+=== CHASSIS - REAR CORNERS ===
+
+Spring Deflection: Compression from free length. Shows preload
+
+Shock Deflection: Compression from free length. Shows travel before springs/packers
+
+Spring Perch Offset: Adjusts height and weight. Decreasing = more preload, more weight, higher height. Adjust in pairs to prevent crossweight changes
+
+Spring Rate: Force per displacement. Stiffer = better aero, less mechanical grip. Softer = better over bumps, more grip, hurts aero. Must be symmetrical (homologation)
+
+Compression Damping: Low-speed resistance. Higher = faster transfer, understeer on throttle. Lower = less understeer on throttle
+
+Rebound Damping: Low-speed extension resistance. Higher = better aero control, understeer under braking. Lower = oversteer under braking
+
+=== CHASSIS - REAR ===
+
+Camber: Negative recommended. Higher negative = more cornering force, less braking grip. Balance life vs performance
+
+Toe-In: Positive toe-in = more stability, may hurt direction changes. Symmetric recommended
+
+Ride Height: Reference from ground to chassis centerline. Affects aero balance, downforce, drag
+
+Third Spring: Resists vertical travel only, not roll. Crucial for controlling rear height and maximizing rear downforce
+
+Third Perch Offset: Adjusts static third spring load and front ride height [note: manual says front but likely means rear]
+
+Third Spring Deflection: Compression from free length. Not directly adjustable. Higher = more preload
+
+Third Damper Deflection: Travel available before bottoming. Shows position only
+
+Pushrod Length Offset: Changes height without affecting preload. Set springs first, then adjust. Longer = higher, shorter = lower
+
+ARB Size: Roll stiffness. Larger = stiffer, less roll, understeer, more responsive feel. Smaller = softer, more roll, less understeer, more grip
+
+ARB Arm Length: Longer = softer, understeer. Shorter = stiffer, oversteer
+
+=== BRAKES / IN-CAR / MISC ===
+
+Display Page: Default startup page (no performance effect)
+
+Front Master Cylinder: Larger = less front pressure, rearward bias, more pedal effort. Smaller = more front pressure, forward bias, less effort
+
+Rear Master Cylinder: Larger = less rear pressure, forward bias, more effort. Smaller = more rear pressure, rearward bias, less effort
+
+Brake Pressure Bias: % to front. Higher = more front, understeer under braking. Lower = more rear, oversteer. Set to avoid lockups
+
+Fuel Level: Amount in tank at load
+
+Crossweight: % over RF and LR wheels. Higher = understeer in left turns, oversteer in right. Lower = oversteer in left, understeer in right
+
+Gear Stack: 5 options. Shorter = better acceleration, lower top speed. Longer = higher top speed, less acceleration. Match to track
+
+Top Speed: Estimated from gear stack
+
+=== DIFFERENTIAL ===
+
+Ramp Angles: Power (accel) and Coast (decel). Lower angle = more locking. Higher = less locking
+- Coast: More locking (lower) = understeer. Less locking (higher) = oversteer
+- Power: More locking (lower) = oversteer. Less locking (higher) = understeer
+
+Clutch Friction Faces: Multiplies locking force. More faces = more understeer off-throttle, more oversteer on-throttle. Fewer = more oversteer off-throttle, more understeer on-throttle
+
+Preload: Static locking always present. More = understeer braking, oversteer throttle. Less = oversteer braking, understeer throttle
+
+=== SETUP TIPS ===
+
+Tech Inspection Failures: Likely ride heights. Use P-rod Length Offset (right click/positive = raise, left click/negative = lower)
+
+iRacing Setup Types:
+- Baseline: 50% fuel, max downforce, passes all fuel loads, not max performance
+- Low/Medium/High DF: 50% fuel, use when no track-specific setup
+- _wet: Wet tires pre-fitted
+- Track specific: Fueled for series finish
+
+Starting Point: Use High Downforce setup if track not listed
+
+Third/Heave Springs: Adjust pitch motion and dynamic ride heights without affecting roll. Major effect on pitch. Use with torsion bars/springs
+
+Front Ride Height: Generally run as low as possible for more downforce
+
+Aerodynamic Balance: Two parts - direct garage settings (wings, static heights) and dynamic settings (springs affect on-track heights, dampers affect transient motion). Aero active even in slow corners. Settings affecting dynamic heights also affect roll and mechanical balance. Third/heave springs affect pitch only, not roll
+
+Mechanical Balance: Roll stiffness (ARBs, springs, dampers) and differential. Monitor total roll stiffness and front/rear balance
+
+Gear Stack: Use shortest possible without over-revving 6th on longest straight. Shorter = better acceleration
+
+Tire Contact Patch: Camber and toe behave independently. Easy to tweak anytime but hard to optimize if other settings induce undesirable behavior
+
+Final Note: If unsure if change helps, try adjusting different setting - may be another option covering up the detail you're adjusting

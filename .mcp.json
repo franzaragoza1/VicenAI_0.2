@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "vicen-racing-engineer": {
+      "command": "node",
+      "args": [
+        "./mcp-bridge/dist/index.js"
+      ],
+      "env": {
+        "LOG_LEVEL": "info",
+        "VICEN_SERVER_URL": "http://localhost:8081"
+      }
+    }
+  }
+}
